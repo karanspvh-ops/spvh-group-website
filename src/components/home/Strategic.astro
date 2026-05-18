@@ -1,0 +1,140 @@
+---
+const articles = [
+  {
+    category: "Corporate",
+    title: "SPVH Group Announces Strategic Expansion into New Digital Frontier",
+    date: "Oct 24, 2024",
+    image: "https://images.pexels.com/photos/11043708/pexels-photo-11043708.jpeg?auto=compress&cs=tinysrgb&w=800",
+    link: "https://www.vccircle.com/weavecapital-announces-75-mn-fund-with-aim-to-back-15-20-startups"
+  },
+  {
+    category: "Financial Services",
+    title: "Revolutionizing Wealth Management: The New Institutional Grade Platform",
+    date: "Oct 12, 2024",
+    image: "https://images.pexels.com/photos/5784807/pexels-photo-5784807.jpeg?auto=compress&cs=tinysrgb&w=800",
+    link: "#"
+  },
+  {
+    category: "Governance",
+    title: "Setting New Benchmarks in Professional Corporate Governance",
+    date: "Sep 28, 2024",
+    image: "https://images.pexels.com/photos/9488842/pexels-photo-9488842.jpeg?auto=compress&cs=tinysrgb&w=800",
+    link: "#"
+  },
+  {
+    category: "Technology",
+    title: "AI Integration in Portfolio Management: A Strategic Roadmap",
+    date: "Sep 15, 2024",
+    image: "https://images.pexels.com/photos/14314638/pexels-photo-14314638.jpeg?auto=compress&cs=tinysrgb&w=800",
+    link: "#"
+  }
+];
+---
+
+<section id="news" class="py-24 bg-surface overflow-hidden" data-ps="src/components/home/Strategic.astro:nntstl">
+  <div class="max-w-[1400px] mx-auto px-6 lg:px-12" data-ps="src/components/home/Strategic.astro:news-container">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6" data-ps="src/components/home/Strategic.astro:news-header">
+      <div class="max-w-2xl" data-ps="src/components/home/Strategic.astro:news-title-wrap">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4" data-ps="src/components/home/Strategic.astro:news-title">Latest News & PR</h2>
+        <p class="text-muted-foreground text-lg" data-ps="src/components/home/Strategic.astro:news-desc">Insights and updates from the SPVH Group ecosystem.</p>
+      </div>
+      
+      <div class="flex gap-4" data-ps="src/components/home/Strategic.astro:news-nav">
+        <button 
+          id="news-prev" 
+          class="w-14 h-14 rounded-2xl flex items-center justify-center bg-white/60 backdrop-blur-md border border-white/40 shadow-lg text-primary hover:bg-white/80 transition-all active:scale-95 disabled:opacity-30"
+          aria-label="Previous articles"
+          data-ps="src/components/home/Strategic.astro:news-prev"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button 
+          id="news-next" 
+          class="w-14 h-14 rounded-2xl flex items-center justify-center bg-white/60 backdrop-blur-md border border-white/40 shadow-lg text-primary hover:bg-white/80 transition-all active:scale-95 disabled:opacity-30"
+          aria-label="Next articles"
+          data-ps="src/components/home/Strategic.astro:news-next"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div 
+      id="news-track" 
+      class="flex gap-8 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-8"
+      data-ps="src/components/home/Strategic.astro:news-track"
+    >
+      {articles.map((article, __psIdx) => (
+        <article class="min-w-[85%] md:min-w-[calc(50%-16px)] lg:min-w-[calc(33.333%-22px)] snap-start group" data-ps="src/components/home/Strategic.astro:article-card">
+          <a href={article.link} class="block no-underline" target="_blank" rel="noopener noreferrer" data-ps={`src/components/home/Strategic.astro:sv57oa-${__psIdx}`}>
+            <div class="relative aspect-[16/10] rounded-3xl overflow-hidden mb-6" data-ps="src/components/home/Strategic.astro:article-img-wrap">
+              <img 
+                src={article.image} 
+                alt={article.title} 
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                data-ps="src/components/home/Strategic.astro:article-img"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" data-ps="src/components/home/Strategic.astro:article-overlay"></div>
+            </div>
+            
+            <div class="space-y-3" data-ps="src/components/home/Strategic.astro:article-content">
+              <div class="flex items-center gap-4" data-ps="src/components/home/Strategic.astro:article-meta">
+                <span class="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full" data-ps="src/components/home/Strategic.astro:article-cat">Announcement</span>
+                <span class="text-xs font-medium text-muted-foreground" data-ps="src/components/home/Strategic.astro:article-date">Sep 15, 2022</span>
+              </div>
+              <h3 class="text-xl font-bold text-dark group-hover:text-primary transition-colors line-clamp-2" data-ps="src/components/home/Strategic.astro:article-headline">SPVH Group Announces Strategic Expansion into Venture Capital Fund</h3>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+<script is:inline>
+  function setupNewsCarousel() {
+    const track = document.getElementById('news-track');
+    const prevBtn = document.getElementById('news-prev');
+    const nextBtn = document.getElementById('news-next');
+    
+    if (!track || !prevBtn || !nextBtn) return;
+
+    const getScrollAmount = () => {
+      const firstChild = track.firstElementChild;
+      return firstChild ? firstChild.offsetWidth + 32 : 300;
+    };
+
+    nextBtn.addEventListener('click', () => {
+      track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+    });
+
+    // Update button states on scroll
+    const updateButtons = () => {
+      const tolerance = 5;
+      prevBtn.disabled = track.scrollLeft <= tolerance;
+      nextBtn.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - tolerance;
+    };
+
+    track.addEventListener('scroll', updateButtons);
+    window.addEventListener('resize', updateButtons);
+    updateButtons();
+  }
+
+  // Initialize
+  setupNewsCarousel();
+  document.addEventListener('astro:page-load', setupNewsCarousel);
+</script>

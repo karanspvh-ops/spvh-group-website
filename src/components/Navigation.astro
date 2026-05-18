@@ -1,0 +1,271 @@
+---
+import { SITE } from '@/config/site';
+---
+
+<header class="fixed top-4 left-[2.5vw] w-[95vw] z-50 bg-white/50 backdrop-blur-md border border-gray-100 shadow-lg shadow-black/5 rounded-full transition-all duration-500 py-4 md:py-5 flex items-center" id="main-header" data-ps="src/components/Navigation.astro:dt8k88">
+  <div class="flex justify-between items-center w-full px-8 md:px-12 transition-all duration-500" id="nav-inner" data-ps="src/components/Navigation.astro:gqvsdd">
+    <!-- Logo Left -->
+    <div class="flex items-center shrink-0" data-ps="src/components/Navigation.astro:gqvsdd">
+      <a href="/" class="flex items-center -ml-4 transition-transform duration-300 active:scale-95" data-ps="src/components/Navigation.astro:7vkjsd">
+        <img id="nav-logo-color" src="https://pagesmith-cdn.com/347b1a00/images/SPVH-Logo-Updated-768.webp" alt="SPVH Group Logo" class="h-16 md:h-20 w-auto object-contain transition-all duration-500 origin-left" data-ps="src/components/Navigation.astro:d4d69u" />
+      </a>
+      <button id="expand-nav-btn" class="hidden opacity-0 w-0 text-primary hover:text-primary-hover transition-all duration-300 items-center justify-center cursor-pointer bg-primary/10 hover:bg-primary/20 rounded-full h-10 shrink-0" aria-label="Expand navigation" data-ps="src/components/Navigation.astro:5ds8">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+    </div>
+
+    <!-- Right Side Content -->
+    <div id="nav-right-content" class="flex items-center justify-end flex-1 ml-4 md:ml-8 transition-all duration-500 opacity-100 translate-x-0" data-ps="src/components/Navigation.astro:gqvsde">
+      <!-- Right Aligned Desktop Nav -->
+      <nav class="hidden md:flex flex-1 justify-end items-center gap-4 lg:gap-8 mr-6 lg:mr-10" data-ps="src/components/Navigation.astro:m59h3a">
+      <a href="/about" class="nav-text-link relative group text-base lg:text-lg font-bold text-primary hover:text-primary-hover transition-colors uppercase tracking-wider whitespace-nowrap" data-ps="src/components/Navigation.astro:7vkjse">
+        About
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" data-ps="src/components/Navigation.astro:i2om6g"></span>
+      </a>
+      <div class="relative group" data-ps="src/components/Navigation.astro:dropdown-container">
+        <a href="/#businesses" class="nav-text-link relative text-base lg:text-lg font-bold text-primary hover:text-primary-hover transition-colors uppercase tracking-wider flex items-center gap-1 whitespace-nowrap" data-ps="src/components/Navigation.astro:7vkjsf">
+          Business Verticals
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:rotate-180"><path d="m6 9 6 6 6-6"/></svg>
+          <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" data-ps="src/components/Navigation.astro:i2om6h"></span>
+        </a>
+        
+        <!-- Dropdown Menu -->
+        <div class="absolute top-full left-1/2 -translate-x-1/2 pt-[30px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top translate-y-2 group-hover:translate-y-0 z-50 min-w-[300px]" data-ps="src/components/Navigation.astro:gqvsdb">
+          <div class="relative" data-ps="src/components/Navigation.astro:gqvsde">
+            <!-- Caret / Tooltip Arrow -->
+            <div class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white/95 border-t border-l border-white/30 rotate-45 z-0" data-ps="src/components/Navigation.astro:caret"></div>
+            
+            <div class="relative bg-white/95 backdrop-blur-md rounded-2xl shadow-xl border border-white/30 py-2 overflow-hidden flex flex-col z-10" data-ps="src/components/Navigation.astro:gqvsdc">
+              <a href="/financial-services" class="px-5 py-3 text-sm font-semibold text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors uppercase tracking-wider border-b border-gray-100 last:border-0" data-ps="src/components/Navigation.astro:7vkjsb">Financial Services</a>
+              <a href="/media-entertainment" class="px-5 py-3 text-sm font-semibold text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors uppercase tracking-wider border-b border-gray-100 last:border-0" data-ps="src/components/Navigation.astro:7vkjsd">Media & Entertainment</a>
+              <a href="/hospitality" class="px-5 py-3 text-sm font-semibold text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors uppercase tracking-wider border-b border-gray-100 last:border-0" data-ps="src/components/Navigation.astro:7vkjsc">Hospitality</a>
+              <a href="/verticals/automotive" class="px-5 py-3 text-sm font-semibold text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors uppercase tracking-wider border-b border-gray-100 last:border-0" data-ps="src/components/Navigation.astro:7vkjsa">Automotive</a>
+              <a href="/verticals/technology-research" class="px-5 py-3 text-sm font-semibold text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors uppercase tracking-wider border-b border-gray-100 last:border-0" data-ps="src/components/Navigation.astro:7vkjsf">Technology & Research</a>
+              <a href="/verticals/real-estate-interior-design" class="px-5 py-3 text-sm font-semibold text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors uppercase tracking-wider border-b border-gray-100 last:border-0" data-ps="src/components/Navigation.astro:7vkjse">Real Estate & Interior Design</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="/our-programs" class="nav-text-link relative group text-base lg:text-lg font-bold text-primary hover:text-primary-hover transition-colors uppercase tracking-wider whitespace-nowrap" data-ps="src/components/Navigation.astro:our-programs-nav">
+        Our Programs
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full" data-ps="src/components/Navigation.astro:i2om6i"></span>
+      </a>
+      </nav>
+
+      <!-- Right Action Items -->
+      <div class="flex items-center gap-3 shrink-0" data-ps="src/components/Navigation.astro:right-actions">
+        <!-- Contact Button -->
+        <a href="/#contact" class="flex items-center justify-center bg-primary text-white font-bold uppercase tracking-wider rounded-full hover:bg-primary-hover transition-colors shadow-md hover:shadow-lg whitespace-nowrap w-12 h-12 lg:w-auto lg:h-auto lg:px-8 lg:py-3" data-ps="src/components/Navigation.astro:kd8n5z">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block lg:hidden"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="hidden lg:block text-sm xl:text-lg" data-ps="src/components/Navigation.astro:i2om6i">Contact</span>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-primary hover:text-primary-hover p-2 focus:outline-none transition-colors shrink-0" aria-label="Toggle menu" data-ps="src/components/Navigation.astro:4mvab">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed top-24 left-2 right-2 max-w-[95%] mx-auto bg-white/80 backdrop-blur-md border border-gray-100 shadow-lg shadow-black/5 rounded-3xl z-40 hidden flex-col py-10 items-center overflow-y-auto max-h-[85vh]" data-ps="src/components/Navigation.astro:gqvsde">
+    <button id="close-menu-btn" class="absolute top-6 right-6 text-gray-700 hover:text-primary p-2 focus:outline-none bg-gray-100/50 rounded-full" aria-label="Close menu" data-ps="src/components/Navigation.astro:4mvac">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <nav class="flex flex-col items-center gap-8 text-center w-full max-w-sm px-6" data-ps="src/components/Navigation.astro:m59h39">
+      <a href="/about" class="text-2xl font-bold text-primary hover:text-primary-hover uppercase tracking-widest mobile-link" data-ps="src/components/Navigation.astro:kd8n5y">About</a>
+      
+      <div class="flex flex-col items-center w-full" data-ps="src/components/Navigation.astro:gqvsdd">
+        <button id="mobile-verticals-trigger" class="flex items-center justify-center gap-2 text-2xl font-bold text-primary hover:text-primary-hover uppercase tracking-widest w-full" data-ps="src/components/Navigation.astro:kd8n5x">
+          Business Verticals
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300" id="mobile-verticals-icon"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="mobile-verticals-menu" class="hidden flex-col items-start gap-4 w-full py-4 mt-2 px-8 bg-secondary/10 rounded-2xl transition-all duration-300" data-ps="src/components/Navigation.astro:gqvsde">
+          <a href="/financial-services" class="text-base font-bold text-secondary hover:text-secondary-hover mobile-link uppercase tracking-wider text-left pl-4 border-l-2 border-secondary/30" data-ps="src/components/Navigation.astro:kd8n5y">Financial Services</a>
+          <a href="/media-entertainment" class="text-base font-bold text-secondary hover:text-secondary-hover mobile-link uppercase tracking-wider text-left pl-4 border-l-2 border-secondary/30" data-ps="src/components/Navigation.astro:kd8n5w">Media & Entertainment</a>
+          <a href="/hospitality" class="text-base font-bold text-secondary hover:text-secondary-hover mobile-link uppercase tracking-wider text-left pl-4 border-l-2 border-secondary/30" data-ps="src/components/Navigation.astro:kd8n5x">Hospitality</a>
+          <a href="/verticals/automotive" class="text-base font-bold text-secondary hover:text-secondary-hover mobile-link uppercase tracking-wider text-left pl-4 border-l-2 border-secondary/30" data-ps="src/components/Navigation.astro:kd8n5z">Automotive</a>
+          <a href="/verticals/technology-research" class="text-base font-bold text-secondary hover:text-secondary-hover mobile-link uppercase tracking-wider text-left pl-4 border-l-2 border-secondary/30" data-ps="src/components/Navigation.astro:kd8n5u">Technology & Research</a>
+          <a href="/verticals/real-estate-interior-design" class="text-base font-bold text-secondary hover:text-secondary-hover mobile-link uppercase tracking-wider text-left pl-4 border-l-2 border-secondary/30" data-ps="src/components/Navigation.astro:kd8n5v">Real Est. & Interior Design</a>
+        </div>
+      </div>
+
+      <a href="/our-programs" class="text-2xl font-bold text-primary hover:text-primary-hover uppercase tracking-widest mobile-link" data-ps="src/components/Navigation.astro:our-programs-mobile">Our Programs</a>
+      
+      <a href="/#contact" class="px-10 py-4 bg-primary text-white text-xl font-bold uppercase tracking-wider rounded-full hover:bg-primary-hover transition-colors shadow-md mobile-link mt-6" data-ps="src/components/Navigation.astro:kd8n5w">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Smart Collapse Navigation Logic
+  const header = document.getElementById('main-header');
+  const logoColor = document.getElementById('nav-logo-color');
+  const expandBtn = document.getElementById('expand-nav-btn');
+  const rightContent = document.getElementById('nav-right-content');
+  const innerContainer = document.getElementById('nav-inner');
+
+  let lastScrollY = window.scrollY;
+  let isManuallyExpanded = false;
+  
+  function setNavState(state) {
+    if (!header) return;
+    if (state === 'expanded') {
+      header.classList.remove('w-[260px]', 'md:w-[320px]');
+      header.classList.add('w-[95vw]');
+      
+      rightContent.classList.remove('opacity-0', 'invisible', 'translate-x-4', 'absolute');
+      rightContent.classList.add('opacity-100', 'translate-x-0');
+      
+      expandBtn.classList.remove('flex', 'opacity-100', 'w-10', 'ml-4', 'md:ml-6');
+      expandBtn.classList.add('hidden', 'opacity-0', 'w-0');
+      
+      // Removed padding and scaling alterations to keep logo perfectly anchored to the left
+    } else if (state === 'collapsed') {
+      header.classList.remove('w-[95vw]');
+      header.classList.add('w-[260px]', 'md:w-[320px]');
+      
+      rightContent.classList.remove('opacity-100', 'translate-x-0');
+      rightContent.classList.add('opacity-0', 'invisible', 'translate-x-4', 'absolute');
+      
+      expandBtn.classList.remove('hidden', 'opacity-0', 'w-0');
+      expandBtn.classList.add('flex', 'opacity-100', 'w-10', 'ml-4', 'md:ml-6');
+      
+      // Removed padding and scaling alterations to keep logo perfectly anchored to the left
+    }
+  }
+
+  // Initial load behavior
+  function initNav() {
+    const isHome = window.location.pathname === '/' || window.location.pathname === '/index.html';
+    if (isHome && window.scrollY <= 10) {
+      setNavState('expanded');
+    } else {
+      setNavState('collapsed');
+    }
+  }
+
+  // Run on load
+  initNav();
+  document.addEventListener('astro:page-load', initNav);
+
+  // Scroll behavior
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    
+    if (currentScrollY > lastScrollY && currentScrollY > 20) {
+      // Scrolling down
+      setNavState('collapsed');
+      isManuallyExpanded = false;
+    } else if (currentScrollY < lastScrollY) {
+      // Scrolling up
+      setNavState('expanded');
+    }
+    
+    lastScrollY = currentScrollY;
+  }, { passive: true });
+
+  // Manual override click
+  expandBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    isManuallyExpanded = true;
+    setNavState('expanded');
+  });
+
+  // Mobile menu functionality
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const closeMenuBtn = document.getElementById('close-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+  
+  let isMenuOpen = false;
+
+  function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+    if (isMenuOpen) {
+      mobileMenu?.classList.remove('hidden');
+      mobileMenu?.classList.add('flex');
+    } else {
+      mobileMenu?.classList.add('hidden');
+      mobileMenu?.classList.remove('flex');
+    }
+  }
+  
+  function closeMenu() {
+    isMenuOpen = false;
+    mobileMenu?.classList.add('hidden');
+    mobileMenu?.classList.remove('flex');
+  }
+  
+  mobileMenuBtn?.addEventListener('click', toggleMenu);
+  closeMenuBtn?.addEventListener('click', closeMenu);
+  
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Mobile Dropdown Toggle
+  const verticalsTrigger = document.getElementById('mobile-verticals-trigger');
+  const verticalsMenu = document.getElementById('mobile-verticals-menu');
+  const verticalsIcon = document.getElementById('mobile-verticals-icon');
+
+  verticalsTrigger?.addEventListener('click', () => {
+    const isHidden = verticalsMenu?.classList.contains('hidden');
+    if (isHidden) {
+      verticalsMenu?.classList.remove('hidden');
+      verticalsMenu?.classList.add('flex');
+      verticalsIcon?.classList.add('rotate-180');
+    } else {
+      verticalsMenu?.classList.add('hidden');
+      verticalsMenu?.classList.remove('flex');
+      verticalsIcon?.classList.remove('rotate-180');
+    }
+  });
+
+  // Handle smooth scrolling for hash links when on the same page
+  document.querySelectorAll('a[href^="/#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      const targetId = href.split('#')[1];
+      const targetElement = document.getElementById(targetId);
+      
+      // If we are on the homepage and the element exists, scroll to it smoothly
+      if (window.location.pathname === '/' && targetElement) {
+        e.preventDefault();
+        
+        // Calculate header offset for smooth scrolling
+        const headerOffset = 100; // Adjust based on your nav height
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+        
+        // Update URL hash without jumping
+        history.pushState(null, null, '#' + targetId);
+      }
+    });
+  });
+
+  // Handle scrolling when arriving from another page with a hash
+  window.addEventListener('load', () => {
+    if (window.location.hash && window.location.pathname === '/') {
+      const targetElement = document.querySelector(window.location.hash);
+      if (targetElement) {
+        setTimeout(() => {
+          const headerOffset = 100;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }, 150); // slight delay to ensure layout is ready
+      }
+    }
+  });
+</script>

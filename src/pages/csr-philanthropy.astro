@@ -1,0 +1,98 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "CSR & Philanthropy | SPVH Group",
+  "description": "Fostering positive change through sustainable projects and meaningful partnerships.",
+  "url": `${SITE.url}csr-philanthropy`
+};
+---
+
+<BaseLayout title="CSR & Philanthropy | SPVH Group" description="Our corporate social responsibility initiatives are dedicated to fostering positive change through sustainable projects and meaningful partnerships." jsonLd={jsonLd}>
+  <!-- Section 1: Hero Header -->
+  <section class="relative min-h-[60vh] flex items-center pt-20 overflow-hidden" data-ps="src/pages/csr-philanthropy.astro:srk0b5">
+    <div class="absolute inset-0 z-0" data-ps="src/pages/csr-philanthropy.astro:exvgno">
+      <img 
+        src="https://images.pexels.com/photos/6837810/pexels-photo-6837810.png?auto=compress&cs=tinysrgb&w=1200"
+        srcset="https://images.pexels.com/photos/6837810/pexels-photo-6837810.png?auto=compress&cs=tinysrgb&w=320 320w, https://images.pexels.com/photos/6837810/pexels-photo-6837810.png?auto=compress&cs=tinysrgb&w=480 480w, https://images.pexels.com/photos/6837810/pexels-photo-6837810.png?auto=compress&cs=tinysrgb&w=640 640w, https://images.pexels.com/photos/6837810/pexels-photo-6837810.png?auto=compress&cs=tinysrgb&w=768 768w, https://images.pexels.com/photos/6837810/pexels-photo-6837810.png?auto=compress&cs=tinysrgb&w=1024 1024w, https://images.pexels.com/photos/6837810/pexels-photo-6837810.png?auto=compress&cs=tinysrgb&w=1280 1280w, https://images.pexels.com/photos/6837810/pexels-photo-6837810.png?auto=compress&cs=tinysrgb&w=1920 1920w"
+        sizes="100vw"
+        alt="Sustainable Landscape" 
+        class="w-full h-full object-cover"
+        fetchpriority="high"
+        loading="eager" data-ps="src/pages/csr-philanthropy.astro:hg4kz8" />
+      <div class="absolute inset-0 bg-dark/80" data-ps="src/pages/csr-philanthropy.astro:exvgnn"></div>
+    </div>
+    
+    <div class="container mx-auto px-4 relative z-10" data-ps="src/pages/csr-philanthropy.astro:exvgnm">
+      <div class="max-w-4xl hero-animate" data-ps="src/pages/csr-philanthropy.astro:exvgnl">
+        <h1 class="text-4xl md:text-7xl font-bold text-white mb-6 tracking-tight" data-ps="src/pages/csr-philanthropy.astro:wsxg0x">
+          CSR & Philanthropy: <span class="text-secondary" data-ps="src/pages/csr-philanthropy.astro:ptnds">Beyond Capital</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-white/90 font-medium leading-relaxed max-w-3xl" data-ps="src/pages/csr-philanthropy.astro:qafpqf">
+          Our corporate social responsibility initiatives are dedicated to fostering positive change through sustainable projects and meaningful partnerships. We believe in philanthropy that makes a lasting, tangible impact, enriching communities and supporting causes that align with our core institutional values.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Core Impact Pillars -->
+  <section class="py-24 bg-dark relative overflow-hidden" data-ps="src/pages/csr-philanthropy.astro:srk0b6">
+    <div class="container mx-auto px-4 relative z-10" data-ps="src/pages/csr-philanthropy.astro:exvgnk">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8" data-ps="src/pages/csr-philanthropy.astro:u9os2w">
+        <!-- Card 1: Empowering Education -->
+        <div class="bg-[#0A1931] border-l-4 border-l-secondary border-white/5 p-10 rounded-2xl flex flex-col h-full shadow-2xl" data-ps="src/pages/csr-philanthropy.astro:u9os2v">
+          <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-8" data-ps="src/pages/csr-philanthropy.astro:u9os2u">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-6" data-ps="src/pages/csr-philanthropy.astro:8vcrie">Empowering Education</h3>
+          <p class="text-dark-muted leading-relaxed flex-grow" data-ps="src/pages/csr-philanthropy.astro:qafpqg">
+            Nurturing future leaders through targeted skill-building programs and accessibility initiatives. We invest in educational frameworks that bridge the opportunity gap and equip the next generation with modern, market-relevant competencies.
+          </p>
+        </div>
+
+        <!-- Card 2: Environmental Sustainability -->
+        <div class="bg-[#0A1931] border-l-4 border-l-secondary border-white/5 p-10 rounded-2xl flex flex-col h-full shadow-2xl" data-ps="src/pages/csr-philanthropy.astro:u9os2t">
+          <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-8" data-ps="src/pages/csr-philanthropy.astro:u9os2s">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8h-5a7 7 0 0 0-7 7l-2 3Z"/><path d="M9.17 14.85a1 1 0 1 1-1.42-1.42 1 1 0 0 1 1.42 1.42ZM11 20v-3"/><path d="m9 20-1-2"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-6" data-ps="src/pages/csr-philanthropy.astro:8vcrif">Environmental Sustainability</h3>
+          <p class="text-dark-muted leading-relaxed flex-grow" data-ps="src/pages/csr-philanthropy.astro:qafpqh">
+            Backing green initiatives and renewable energy projects for a cleaner future. We actively support circular economy frameworks, focusing on advanced recycling infrastructure and waste-to-value initiatives to systematically minimize environmental footprints.
+          </p>
+        </div>
+
+        <!-- Card 3: Community Health -->
+        <div class="bg-[#0A1931] border-l-4 border-l-secondary border-white/5 p-10 rounded-2xl flex flex-col h-full shadow-2xl" data-ps="src/pages/csr-philanthropy.astro:u9os2r">
+          <div class="w-14 h-14 bg-secondary/10 rounded-xl flex items-center justify-center mb-8" data-ps="src/pages/csr-philanthropy.astro:u9os2q">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00A896" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-6" data-ps="src/pages/csr-philanthropy.astro:8vcrig">Community Health</h3>
+          <p class="text-dark-muted leading-relaxed flex-grow" data-ps="src/pages/csr-philanthropy.astro:qafpqi">
+            Investing in healthcare accessibility and supporting resilient local communities. Our health initiatives are designed to strengthen community well-being by funding essential services and crisis-response infrastructure.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Call to Action -->
+  <section class="py-24 bg-surface relative overflow-hidden text-center" data-ps="src/pages/csr-philanthropy.astro:srk0b7">
+    <!-- Faint geometric background pattern -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#00A896 1px, transparent 1px); background-size: 40px 40px;" data-ps="src/pages/csr-philanthropy.astro:u9os2p"></div>
+    
+    <div class="container mx-auto px-4 relative z-10" data-ps="src/pages/csr-philanthropy.astro:u9os2o">
+      <div class="max-w-3xl mx-auto" data-ps="src/pages/csr-philanthropy.astro:u9os2n">
+        <h2 class="text-3xl md:text-5xl font-bold text-dark mb-6 tracking-tight" data-ps="src/pages/csr-philanthropy.astro:njroq1">Partner For Impact</h2>
+        <p class="text-xl text-muted-foreground mb-10 leading-relaxed" data-ps="src/pages/csr-philanthropy.astro:qafpqj">
+          Are you an NGO, community leader, or sustainability operator aligning with our mission? Let’s explore how SPVH capital and strategic guidance can scale your impact.
+        </p>
+        <a href="/#contact" class="inline-block bg-secondary hover:bg-secondary-hover text-white font-bold py-4 px-12 rounded-lg uppercase tracking-widest transition-all shadow-lg hover:shadow-secondary/20" data-ps="src/pages/csr-philanthropy.astro:xedmfm">
+          SUBMIT A PROPOSAL
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

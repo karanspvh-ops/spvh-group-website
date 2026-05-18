@@ -1,0 +1,127 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+:root {
+  --nav-height: 64px;
+
+  --color-background: hsl(0 0% 100%); /* #ffffff */
+  --color-foreground: hsl(223 25% 14%); /* #1b202d */
+  --color-muted-foreground: hsl(215 16% 47%); /* #65758b */
+  --color-border: hsl(214 32% 91%); /* #e1e7ef */
+  --color-surface: hsl(210 33% 98%); /* #f8fafc */
+  --color-primary: hsl(220 41% 48%); /* #486aad */
+  --color-primary-foreground: hsl(0 0% 100%); /* #ffffff */
+  --color-primary-hover: hsl(220 41% 38%); /* #395489 */
+  --color-secondary: hsl(168 41% 47%); /* #47a995 */
+  --color-secondary-foreground: hsl(0 0% 100%); /* #ffffff */
+  --color-secondary-hover: hsl(168 41% 37%); /* #388576 */
+  --color-dark: hsl(223 25% 14%); /* #1b202d */
+  --color-dark-foreground: hsl(0 0% 100%); /* #ffffff */
+  --color-dark-muted: hsl(216 18% 65%); /* #96a3b6 */
+  --color-dark-border: hsl(223 25% 20%); /* #262d40 */
+  --color-accent: hsl(220 41% 48%); /* #486aad */
+}
+
+@theme {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-border: var(--color-border);
+  --color-surface: var(--color-surface);
+
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-primary-hover: var(--color-primary-hover);
+
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: var(--color-secondary-foreground);
+  --color-secondary-hover: var(--color-secondary-hover);
+
+  --color-dark: var(--color-dark);
+  --color-dark-foreground: var(--color-dark-foreground);
+  --color-dark-muted: var(--color-dark-muted);
+  --color-dark-border: var(--color-dark-border);
+
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+}
+
+/* Prevent horizontal scrolling on all devices */
+html,
+body {
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+}
+
+/* Apply theme colors globally */
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Typography plugin - use theme variables */
+.prose {
+  --tw-prose-body: var(--color-foreground);
+  --tw-prose-headings: var(--color-foreground);
+  --tw-prose-lead: var(--color-muted-foreground);
+  --tw-prose-links: var(--color-primary);
+  --tw-prose-bold: var(--color-foreground);
+  --tw-prose-counters: var(--color-muted-foreground);
+  --tw-prose-bullets: var(--color-muted-foreground);
+  --tw-prose-hr: var(--color-border);
+  --tw-prose-quotes: var(--color-foreground);
+  --tw-prose-quote-borders: var(--color-border);
+  --tw-prose-captions: var(--color-muted-foreground);
+  --tw-prose-code: var(--color-foreground);
+  --tw-prose-pre-code: var(--color-foreground);
+  --tw-prose-pre-bg: var(--color-surface);
+  --tw-prose-th-borders: var(--color-border);
+  --tw-prose-td-borders: var(--color-border);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+  hyphens: none;
+  min-width: 0;
+  font-weight: 700;
+}
+
+p, li {
+  text-wrap: pretty;
+  hyphens: auto;
+}
+
+/* Custom Scroll Reveal */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.hero-animate {
+  opacity: 0;
+  animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-animate-delay-1 { animation-delay: 0.1s; }
+.hero-animate-delay-2 { animation-delay: 0.2s; }
+.hero-animate-delay-3 { animation-delay: 0.3s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-animate {
+    animation: none;
+    opacity: 1;
+  }
+}

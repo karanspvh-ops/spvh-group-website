@@ -1,0 +1,314 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import VerticalNav from '@/components/VerticalNav.astro';
+import { SITE } from '@/config/site';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": `Hospitality | ${SITE.name}`,
+  "description": "SPVH Group’s hospitality vertical is dedicated to identifying and scaling high-potential culinary brands across India.",
+  "url": `${SITE.url}hospitality`
+};
+---
+
+<BaseLayout title={`Hospitality | ${SITE.name}`} description="Engineering Experiences, Investing in Taste." jsonLd={jsonLd}>
+  <!-- Section 1: Hero & Strategic Overview -->
+  <section class="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-dark" data-ps="src/pages/hospitality.astro:hgdmjv">
+    <div class="absolute inset-0 z-0" data-ps="src/pages/hospitality.astro:7rxqfa">
+      <img src="https://images.unsplash.com/photo-1766023505762-2fd1359c4cb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTQzNzh8MHwxfHNlYXJjaHw4fHxNb2Rlcm4lMjBsdXh1cnklMjByZXN0YXVyYW50JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzc1ODE4MTMyfDA&ixlib=rb-4.1.0&q=80&w=1200&auto=format"
+        sizes="100vw"
+        alt="Modern luxury restaurant interior" 
+        class="w-full h-full object-cover opacity-60"
+        loading="eager"
+        fetchpriority="high" data-ps="src/pages/hospitality.astro:59om32" crossorigin="anonymous" />
+      <div class="absolute inset-0 bg-gradient-to-r from-dark via-dark/40 to-transparent" data-ps="src/pages/hospitality.astro:7rxqfb"></div>
+    </div>
+    
+    <div class="container mx-auto px-6 relative z-10" data-ps="src/pages/hospitality.astro:7rxqfc">
+      <div class="max-w-3xl hero-animate" data-ps="src/pages/hospitality.astro:7rxqfd">
+        <a href="/#businesses" class="inline-block px-4 py-1 rounded-full bg-primary/20 backdrop-blur-md border border-primary/30 text-white text-sm font-bold uppercase tracking-widest mb-6 hover:bg-primary/40 transition-colors cursor-pointer" data-ps="src/pages/hospitality.astro:p8niyu">Business Vertical</a>
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-[1.1]" data-ps="src/pages/hospitality.astro:g03vc1">
+          <span class="text-primary uppercase flex flex-col justify-end min-h-[2.2em]" data-ps="src/pages/hospitality.astro:5eab72">
+            <span data-ps="src/pages/hospitality.astro:5eab72">HOSPITALITY</span>
+          </span>
+          <span class="block mt-4 text-2xl md:text-3xl font-normal text-dark-muted" data-ps="src/pages/hospitality.astro:5eab72">Engineering Experiences, Investing in Taste.</span>
+        </h1>
+        <div class="bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-2xl shadow-2xl" data-ps="src/pages/hospitality.astro:7rxqfe">
+          <p class="text-xl text-dark-muted leading-relaxed" data-ps="src/pages/hospitality.astro:fkghvh">
+            SPVH Group’s hospitality vertical is dedicated to identifying and scaling high-potential culinary brands across India. We view hospitality through the lens of asset optimization—combining operational excellence with strategic capital to build nationwide landmarks. Our focus is on the "Gourmet Experience" economy, where we transform local favorites into institutional-grade hospitality assets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <VerticalNav activePath="/hospitality" />
+
+  <!-- Section: Introduction & Strategy -->
+  <section class="relative py-24 bg-surface overflow-hidden" data-ps="src/pages/hospitality.astro:culinary-scaling">
+    <!-- Background Art / Pattern -->
+    <div class="absolute inset-0 z-0 pointer-events-none" data-ps="src/pages/hospitality.astro:intro-bg-art">
+      <img 
+        src="https://pagesmith-cdn.com/347b1a00/images/SPVH-Patterns-2-1536.webp" 
+        alt="Geometric pattern background" 
+        class="w-full h-full object-cover opacity-10" data-ps="src/pages/hospitality.astro:pattern-bg" />
+      <div class="absolute inset-0 bg-gradient-to-b from-surface via-transparent to-surface" data-ps="src/pages/hospitality.astro:pattern-overlay"></div>
+    </div>
+    
+    <div class="container px-6 mx-auto max-w-[900px] text-center relative z-10" data-ps="src/pages/hospitality.astro:culinary-container">
+      <!-- Introduction -->
+      <div class="text-center mb-0" data-ps="src/pages/hospitality.astro:hosp-intro">
+        <h2 class="text-3xl md:text-4xl font-bold text-[#496bad] mb-8" data-ps="src/pages/hospitality.astro:hosp-intro-h2">Architecting Premium Hospitality Assets</h2>
+        <p class="text-lg md:text-[20px] text-[#00A896] leading-[1.6] font-medium italic" data-ps="src/pages/hospitality.astro:hosp-intro-p">
+          "We acquire, reposition, and manage ultra-luxury hospitality assets, blending institutional financial rigor with uncompromising bespoke service to deliver exceptional yield and experiential value."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Our Philosophy (Relocated and Restyled) -->
+  <section class="py-24 bg-[#0A1931]" data-ps="src/pages/hospitality.astro:philosophy-section-new">
+    <div class="container px-6 mx-auto max-w-[1400px]" data-ps="src/pages/hospitality.astro:philosophy-container">
+      <div class="text-center max-w-4xl mx-auto mb-20" data-ps="src/pages/hospitality.astro:philosophy-header">
+        <span class="block text-[#00A896] text-sm font-bold uppercase tracking-[0.2em] mb-4" data-ps="src/pages/hospitality.astro:philosophy-kicker">OUR PHILOSOPHY</span>
+        <h2 class="text-4xl md:text-5xl font-bold text-white leading-tight" data-ps="src/pages/hospitality.astro:philosophy-h2">
+          Curated Experiences. Sustained Yield.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" data-ps="src/pages/hospitality.astro:philosophy-grid">
+        <!-- Module 1: Operational Excellence -->
+        <div class="bg-[#14223a] border border-[#496bad] p-[30px] rounded-[12px] flex flex-col h-full text-center" data-ps="src/pages/hospitality.astro:phil-card-1">
+          <div class="h-[70px] flex items-center justify-center mb-6" data-ps="src/pages/hospitality.astro:phil-icon-1">
+            <h3 class="text-[22px] font-bold text-[#00A896]" data-ps="src/pages/hospitality.astro:phil-title-1">Operational Excellence</h3>
+          </div>
+          <div class="h-[120px] flex items-start justify-center" data-ps="src/pages/hospitality.astro:phil-text-1">
+            <p class="text-[#D1D1D1] leading-[1.5] font-normal" data-ps="src/pages/hospitality.astro:phil-text-1-p">
+              We integrate high-touch, bespoke service with institutional-grade operations to deliver exceptional guest experiences and optimize asset yield across all verticals.
+            </p>
+          </div>
+        </div>
+
+        <!-- Module 2: Value Creation -->
+        <div class="bg-[#14223a] border border-[#496bad] p-[30px] rounded-[12px] flex flex-col h-full text-center" data-ps="src/pages/hospitality.astro:phil-card-2">
+          <div class="h-[70px] flex items-center justify-center mb-6" data-ps="src/pages/hospitality.astro:phil-icon-2">
+            <h3 class="text-[22px] font-bold text-[#00A896]" data-ps="src/pages/hospitality.astro:phil-title-2">Value Creation</h3>
+          </div>
+          <div class="h-[120px] flex items-start justify-center" data-ps="src/pages/hospitality.astro:phil-text-2">
+            <p class="text-[#D1D1D1] leading-[1.5] font-normal" data-ps="src/pages/hospitality.astro:phil-text-2-p">
+              We specialize in the strategic acquisition and repositioning of premium assets, leveraging data-driven market intelligence to unlock significant capital returns for institutional partners.
+            </p>
+          </div>
+        </div>
+
+        <!-- Module 3: Strategic Partnerships -->
+        <div class="bg-[#14223a] border border-[#496bad] p-[30px] rounded-[12px] flex flex-col h-full text-center" data-ps="src/pages/hospitality.astro:phil-card-3">
+          <div class="h-[70px] flex items-center justify-center mb-6" data-ps="src/pages/hospitality.astro:phil-icon-3">
+            <h3 class="text-[22px] font-bold text-[#00A896]" data-ps="src/pages/hospitality.astro:phil-title-3">Strategic Partnerships</h3>
+          </div>
+          <div class="h-[120px] flex items-start justify-center" data-ps="src/pages/hospitality.astro:phil-text-3">
+            <p class="text-[#D1D1D1] leading-[1.5] font-normal" data-ps="src/pages/hospitality.astro:phil-text-3-p">
+              We cultivate exclusive global brand partnerships to drive market differentiation, enhance property value, and secure premier market access for our hospitality portfolio.
+            </p>
+          </div>
+        </div>
+
+        <!-- Module 4: Quantitative Rigor -->
+        <div class="bg-[#14223a] border border-[#496bad] p-[30px] rounded-[12px] flex flex-col h-full text-center" data-ps="src/pages/hospitality.astro:phil-card-4">
+          <div class="h-[70px] flex items-center justify-center mb-6" data-ps="src/pages/hospitality.astro:phil-icon-4">
+            <h3 class="text-[22px] font-bold text-[#00A896]" data-ps="src/pages/hospitality.astro:phil-title-4">Quantitative Rigor</h3>
+          </div>
+          <div class="h-[120px] flex items-start justify-center" data-ps="src/pages/hospitality.astro:phil-text-4">
+            <p class="text-[#D1D1D1] leading-[1.5] font-normal" data-ps="src/pages/hospitality.astro:phil-text-4-p">
+              We deploy advanced predictive modeling and yield management systems to optimize ADR and RevPAR, ensuring consistent, high-yield asset performance across market cycles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Revolving Strip -->
+  <section class="py-12 bg-white border-y border-border overflow-hidden" data-ps="src/pages/hospitality.astro:portfolio-strip">
+    <div class="container mx-auto px-6 mb-8 text-center" data-ps="src/pages/hospitality.astro:portfolio-title-container">
+      <h3 class="text-2xl md:text-3xl font-bold text-dark uppercase tracking-widest" data-ps="src/pages/hospitality.astro:portfolio-title">Current Portfolio</h3>
+      <div class="w-16 h-1 bg-primary mx-auto mt-4" data-ps="src/pages/hospitality.astro:portfolio-divider"></div>
+    </div>
+    <div class="relative flex overflow-x-hidden" data-ps="src/pages/hospitality.astro:strip-container">
+      <div class="animate-marquee whitespace-nowrap flex items-center py-4" data-ps="src/pages/hospitality.astro:strip-content-1">
+        <span class="text-2xl font-bold text-dark/20 uppercase tracking-[0.5em] px-12" data-ps="src/pages/hospitality.astro:coming-soon-1">COMING SOON &nbsp;&bull;&nbsp; COMING SOON &nbsp;&bull;&nbsp; COMING SOON &nbsp;&bull;&nbsp; COMING SOON &nbsp;&bull;&nbsp; COMING SOON &nbsp;&bull;&nbsp; COMING SOON</span>
+      </div>
+
+      <div class="absolute top-0 animate-marquee2 whitespace-nowrap flex items-center py-4" data-ps="src/pages/hospitality.astro:strip-content-2">
+        <span class="text-2xl font-bold text-dark/20 uppercase tracking-[0.5em] px-12" data-ps="src/pages/hospitality.astro:coming-soon-2">COMING SOON &nbsp;&bull;&nbsp; COMING SOON &nbsp;&bull;&nbsp; COMING SOON &nbsp;&bull;&nbsp; COMING SOON &nbsp;&bull;&nbsp; COMING SOON &nbsp;&bull;&nbsp; COMING SOON</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Core Capabilities -->
+  <section class="relative py-32 bg-dark overflow-hidden" data-ps="src/pages/hospitality.astro:hosp-caps-section">
+    <!-- Cinematic Background -->
+    <div class="absolute inset-0 z-0" data-ps="src/pages/hospitality.astro:hosp-caps-bg">
+      <img 
+        src="https://pagesmith-cdn.com/347b1a00/images/pexels-ansar-muhammad-380085065-27626758-1536.webp"
+        sizes="100vw"
+        alt="Hospitality ecosystem background" 
+        class="w-full h-full object-cover object-center"
+        loading="lazy" data-ps="src/pages/hospitality.astro:hosp-bg-img" />
+      <div class="absolute inset-0 bg-black/10" data-ps="src/pages/hospitality.astro:hosp-bg-overlay"></div>
+    </div>
+
+    <div class="container px-6 mx-auto max-w-[1400px] relative z-10" data-ps="src/pages/hospitality.astro:hosp-caps-container">
+
+      <!-- Our Hospitality Ecosystem -->
+      <div class="mb-20" data-ps="src/pages/hospitality.astro:hosp-caps">
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-16 text-center drop-shadow-md" data-ps="src/pages/hospitality.astro:hosp-caps-h3">Our Hospitality Ecosystem</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 not-prose" data-ps="src/pages/hospitality.astro:hosp-caps-grid">
+              
+          <!-- Card 1 -->
+          <div class="bg-white/10 backdrop-blur-[8px] rounded-2xl border border-white/25 p-10 shadow-[0_10px_40px_rgba(0,0,0,0.2)] flex flex-col items-center text-center" data-ps="src/pages/hospitality.astro:hosp-cap-card-1">
+            <div class="text-[#00A896] mb-6" data-ps="src/pages/hospitality.astro:hosp-icon-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-utensils"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+            </div>
+            <h4 class="text-[22px] font-bold text-white mb-4" data-ps="src/pages/hospitality.astro:hosp-cap-title-1">F&B Chain Investments</h4>
+            <p class="text-white text-base leading-[1.5] font-normal m-0" data-ps="src/pages/hospitality.astro:hosp-cap-desc-1">Capitalizing on scalable food and beverage models. We strategically back high-potential restaurant groups and QSR chains, providing the growth capital required to dominate key demographics and geographical markets.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white/10 backdrop-blur-[8px] rounded-2xl border border-white/25 p-10 shadow-[0_10px_40px_rgba(0,0,0,0.2)] flex flex-col items-center text-center" data-ps="src/pages/hospitality.astro:hosp-cap-card-2">
+            <div class="text-[#00A896] mb-6" data-ps="src/pages/hospitality.astro:hosp-icon-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/><path d="M12 2v20"/><path d="M2 12a14.5 14.5 0 0 0 20 0 14.5 14.5 0 0 0-20 0"/></svg>
+            </div>
+            <h4 class="text-[22px] font-bold text-white mb-4" data-ps="src/pages/hospitality.astro:hosp-cap-title-2">Global Expansion Strategies</h4>
+            <p class="text-white text-base leading-[1.5] font-normal m-0" data-ps="src/pages/hospitality.astro:hosp-cap-desc-2">Engineering scalable growth for proven hospitality brands. We leverage deep market intelligence and robust operational frameworks to execute seamless multi-unit rollouts, ensuring brand consistency and margin preservation across new territories.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white/10 backdrop-blur-[8px] rounded-2xl border border-white/25 p-10 shadow-[0_10px_40px_rgba(0,0,0,0.2)] flex flex-col items-center text-center" data-ps="src/pages/hospitality.astro:hosp-cap-card-3">
+            <div class="text-[#00A896] mb-6" data-ps="src/pages/hospitality.astro:hosp-icon-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            </div>
+            <h4 class="text-[22px] font-bold text-white mb-4" data-ps="src/pages/hospitality.astro:hosp-cap-title-3">Concept Curation</h4>
+            <p class="text-white text-base leading-[1.5] font-normal m-0" data-ps="src/pages/hospitality.astro:hosp-cap-desc-3">Architecting bespoke culinary and hospitality experiences. We partner with visionary operators to conceptualize, refine, and launch culturally resonant F&B venues that capture market share and drive enduring consumer loyalty.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white/10 backdrop-blur-[8px] rounded-2xl border border-white/25 p-10 shadow-[0_10px_40px_rgba(0,0,0,0.2)] flex flex-col items-center text-center" data-ps="src/pages/hospitality.astro:hosp-cap-card-4">
+            <div class="text-[#00A896] mb-6" data-ps="src/pages/hospitality.astro:hosp-icon-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </div>
+            <h4 class="text-[22px] font-bold text-white mb-4" data-ps="src/pages/hospitality.astro:hosp-cap-title-4">Strategic F&B Consulting</h4>
+            <p class="text-white text-base leading-[1.5] font-normal m-0" data-ps="src/pages/hospitality.astro:hosp-cap-desc-4">Delivering institutional-grade advisory for hospitality assets. Our expert operators provide targeted consulting on yield management, supply chain optimization, and operational efficiency to maximize asset performance and profitability.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+    @keyframes marquee2 {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(0); }
+    }
+    .animate-marquee {
+      animation: marquee 30s linear infinite;
+    }
+    .animate-marquee2 {
+      animation: marquee2 30s linear infinite;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .animate-marquee, .animate-marquee2 {
+        animation: none;
+      }
+      .whitespace-nowrap {
+        flex-wrap: wrap;
+        white-space: normal;
+      }
+    }
+  </style>
+
+
+  <!-- Section 3: Investment Roadmap -->
+  <section class="py-24 bg-dark text-white relative" data-ps="src/pages/hospitality.astro:hgdmj8">
+    <div class="container mx-auto px-6" data-ps="src/pages/hospitality.astro:7rxqgb">
+      <div class="max-w-4xl mx-auto text-center mb-20" data-ps="src/pages/hospitality.astro:8wx41v">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6" data-ps="src/pages/hospitality.astro:1boy4f">Our Expansion Formats</h2>
+        <p class="text-dark-muted text-xl" data-ps="src/pages/hospitality.astro:fkghve">We are building a diversified hospitality ecosystem across three strategic pillars.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-ps="src/pages/hospitality.astro:8wx41u">
+        <!-- Restaurants -->
+        <div class="bg-white/5 border border-dark-border p-10 rounded-2xl hover:bg-white/10 transition-all duration-300 group" data-ps="src/pages/hospitality.astro:8wx41t">
+          <div class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary/40 transition-colors" data-ps="src/pages/hospitality.astro:8wx41s">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4" data-ps="src/pages/hospitality.astro:dcpz3u">Gourmet Restaurants & Bar</h3>
+          <p class="text-dark-muted text-lg leading-relaxed" data-ps="src/pages/hospitality.astro:fkghvd">
+            Scaling high-margin, concept-driven brands with unique value propositions.
+          </p>
+        </div>
+
+        <!-- Cafes -->
+        <div class="bg-white/5 border border-dark-border p-10 rounded-2xl hover:bg-white/10 transition-all duration-300 group" data-ps="src/pages/hospitality.astro:8wx41r">
+          <div class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary/40 transition-colors" data-ps="src/pages/hospitality.astro:8wx41q">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4" data-ps="src/pages/hospitality.astro:dcpz38">Artisanal Cafes</h3>
+          <p class="text-dark-muted text-lg leading-relaxed" data-ps="src/pages/hospitality.astro:fkghvc">
+            Investing in the premium cafe culture through prime real estate and high customer engagement.
+          </p>
+        </div>
+
+        <!-- QSR -->
+        <div class="bg-white/5 border border-dark-border p-10 rounded-2xl hover:bg-white/10 transition-all duration-300 group" data-ps="src/pages/hospitality.astro:8wx41p">
+          <div class="w-16 h-16 bg-primary/20 rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary/40 transition-colors" data-ps="src/pages/hospitality.astro:8wx41o">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-4" data-ps="src/pages/hospitality.astro:dcpz37">QSR</h3>
+          <p class="text-dark-muted text-lg leading-relaxed" data-ps="src/pages/hospitality.astro:fkghvb">
+            Building tech-enabled, scalable models for rapid geographical expansion and volume growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: CTA (Redesigned Connect With Us) -->
+  <section class="relative py-24 md:py-32 bg-[#0A1931] overflow-hidden" data-ps="src/pages/hospitality.astro:hgdmj7">
+    <!-- Texture Overlay -->
+    <div class="absolute inset-0 z-0 pointer-events-none opacity-5" data-ps="src/pages/hospitality.astro:cta-texture">
+      <img 
+        src="https://pagesmith-cdn.com/347b1a00/images/SPVH-Patterns-2-1536.webp" 
+        alt="Background pattern" 
+        class="w-full h-full object-cover" data-ps="src/pages/hospitality.astro:cta-pattern-img" />
+    </div>
+
+    <div class="container mx-auto px-6 text-center relative z-10" data-ps="src/pages/hospitality.astro:8wx41n">
+      <div class="max-w-[1400px] w-full mx-auto" data-ps="src/pages/hospitality.astro:8wx41m">
+        <span class="block text-sm font-bold tracking-[0.3em] text-[#00A896] uppercase mb-6" data-ps="src/pages/hospitality.astro:cta-kicker">CONNECT WITH US</span>
+        
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight tracking-tight whitespace-normal md:whitespace-nowrap" data-ps="src/pages/hospitality.astro:1boy4g">
+          Strategic Capital for Hospitality Expansion.
+        </h2>
+        
+        <p class="text-xl text-[#D1D1D1] mb-12 leading-relaxed whitespace-normal md:whitespace-nowrap" data-ps="src/pages/hospitality.astro:cta-subheadline">
+          Whether you are seeking institutional investment opportunities or require growth capital to drive your restaurant's global expansion, partner with our expert advisory team today.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex justify-center" data-ps="src/pages/hospitality.astro:cta-buttons">
+          <a href="/#contact" class="px-10 py-4 bg-[#00A896] hover:bg-[#008f7f] text-white font-bold rounded-[6px] transition-all text-center" data-ps="src/pages/hospitality.astro:8gil6b">
+            DISCUSS EXPANSION
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,579 @@
+{
+  "viewportWidth": 1920,
+  "pageBackground": {
+    "type": "color",
+    "value": "rgb(255, 255, 255)"
+  },
+  "sectionThemes": [
+    {
+      "background": "rgb(255, 255, 255)",
+      "isBackgroundPhoto": true,
+      "textColor": "rgb(255, 255, 255)",
+      "headings": [
+        {
+          "tag": "h1",
+          "fontSize": "72px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Where diversity meets Business"
+        },
+        {
+          "tag": "h1",
+          "fontSize": "72px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Building Enterprise with “infinite legacy”"
+        },
+        {
+          "tag": "h1",
+          "fontSize": "72px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Building Your Wealth Journey With us"
+        },
+        {
+          "tag": "h1",
+          "fontSize": "72px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Innovation is the crore"
+        },
+        {
+          "tag": "h2",
+          "fontSize": "42px",
+          "fontWeight": "700",
+          "color": "rgb(27, 32, 45)",
+          "text": "About SPVH Group"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "24px",
+        "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.9)",
+        "lineHeight": "32px"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "rgb(72, 106, 173)",
+          "color": "rgb(255, 255, 255)",
+          "padding": "16px 40px 16px 40px",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "text": "Know More"
+        },
+        {
+          "backgroundColor": "rgb(71, 169, 149)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "12px",
+          "padding": "16px 0px 16px 0px",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "text": "Send Message"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 114,
+          "displayHeight": 40
+        },
+        {
+          "displayWidth": 1920,
+          "displayHeight": 90000,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 1920,
+          "displayHeight": 90000,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 1920,
+          "displayHeight": 90000,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 1920,
+          "displayHeight": 90000,
+          "objectFit": "cover"
+        },
+        {
+          "displayWidth": 606,
+          "displayHeight": 606,
+          "objectFit": "contain"
+        },
+        {
+          "displayWidth": 115,
+          "displayHeight": 40
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "896px"
+      },
+      "interactionType": "carousel"
+    },
+    {
+      "background": "oklab(0 0 0 / 0.5)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "oklab(0 0 0 / 0.5)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "oklab(0 0 0 / 0.5)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "oklab(0 0 0 / 0.5)",
+      "textColor": null,
+      "headings": [],
+      "bodyStyle": null,
+      "buttons": [],
+      "layout": {}
+    },
+    {
+      "background": "rgb(248, 250, 252)",
+      "textColor": "rgb(27, 32, 45)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "42px",
+          "fontWeight": "700",
+          "color": "rgb(27, 32, 45)",
+          "text": "About SPVH Group"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "18px",
+        "color": "oklab(0.24472 -0.000828564 -0.0259807 / 0.9)",
+        "lineHeight": "29.25px"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "rgb(72, 106, 173)",
+          "color": "rgb(255, 255, 255)",
+          "padding": "16px 40px 16px 40px",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "text": "Know More"
+        }
+      ],
+      "images": [
+        {
+          "displayWidth": 606,
+          "displayHeight": 606,
+          "objectFit": "contain"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "1280px",
+        "paddingBlock": "96px 96px",
+        "display": "grid",
+        "gridTemplateColumns": "608px 608px",
+        "gap": "64px",
+        "childCount": 2
+      }
+    },
+    {
+      "background": "rgb(27, 32, 45)",
+      "textColor": "rgb(255, 255, 255)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "48px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Business Verticals"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "20px",
+        "color": "rgb(150, 163, 182)",
+        "lineHeight": "32.5px"
+      },
+      "buttons": [],
+      "layout": {
+        "containerMaxWidth": "1280px",
+        "paddingBlock": "128px 128px",
+        "marginBlock": "48px 48px",
+        "display": "grid",
+        "gridTemplateColumns": "410.656px 410.672px 410.656px",
+        "gap": "24px",
+        "childCount": 6
+      }
+    },
+    {
+      "background": "rgb(27, 32, 45)",
+      "textColor": "rgb(255, 255, 255)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "42px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Institutional Governance.  Long-term Vision."
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Institutional Rigor"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Long-Term Focus"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Client Alignment"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "18px",
+          "fontWeight": "700",
+          "color": "rgb(255, 255, 255)",
+          "text": "Compliance"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "15px",
+        "color": "rgb(150, 163, 182)",
+        "lineHeight": "24.375px"
+      },
+      "buttons": [],
+      "layout": {
+        "containerMaxWidth": "1280px",
+        "paddingBlock": "96px 96px",
+        "display": "grid",
+        "gridTemplateColumns": "608px 608px",
+        "gap": "64px",
+        "childCount": 2
+      }
+    },
+    {
+      "background": "rgb(248, 250, 252)",
+      "textColor": "rgb(27, 32, 45)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "42px",
+          "fontWeight": "700",
+          "color": "rgb(27, 32, 45)",
+          "text": "Strategic Capital. Professional Governance."
+        },
+        {
+          "tag": "h3",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "color": "rgb(27, 32, 45)",
+          "text": "Integrity"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "color": "rgb(27, 32, 45)",
+          "text": "Specialization"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "color": "rgb(27, 32, 45)",
+          "text": "Rigor"
+        },
+        {
+          "tag": "h3",
+          "fontSize": "20px",
+          "fontWeight": "700",
+          "color": "rgb(27, 32, 45)",
+          "text": "Growth"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "18px",
+        "color": "rgb(101, 117, 139)",
+        "lineHeight": "29.25px"
+      },
+      "buttons": [],
+      "layout": {
+        "containerMaxWidth": "1280px",
+        "paddingBlock": "96px 96px",
+        "display": "grid",
+        "gridTemplateColumns": "296px 296px 296px 296px",
+        "gap": "32px",
+        "childCount": 4
+      }
+    },
+    {
+      "background": "rgb(27, 32, 45)",
+      "textColor": "rgb(255, 255, 255)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "48px",
+          "fontWeight": "800",
+          "color": "rgb(255, 255, 255)",
+          "text": "Get in Touch."
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "18px",
+        "color": "rgb(150, 163, 182)",
+        "lineHeight": "29.25px"
+      },
+      "buttons": [
+        {
+          "backgroundColor": "rgb(71, 169, 149)",
+          "color": "rgb(255, 255, 255)",
+          "borderRadius": "12px",
+          "padding": "16px 0px 16px 0px",
+          "fontSize": "14px",
+          "fontWeight": "700",
+          "text": "Send Message"
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "1024px",
+        "paddingBlock": "64px 64px",
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "gap": "32px",
+        "childCount": 3
+      }
+    },
+    {
+      "background": "rgb(27, 32, 45)",
+      "textColor": "rgb(150, 163, 182)",
+      "headings": [
+        {
+          "tag": "h2",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "color": "rgb(150, 163, 182)",
+          "text": "Platform"
+        },
+        {
+          "tag": "h2",
+          "fontSize": "12px",
+          "fontWeight": "700",
+          "color": "rgb(150, 163, 182)",
+          "text": "Connect"
+        }
+      ],
+      "bodyStyle": {
+        "fontSize": "14px",
+        "color": "rgb(150, 163, 182)",
+        "lineHeight": "22.75px"
+      },
+      "buttons": [],
+      "images": [
+        {
+          "displayWidth": 115,
+          "displayHeight": 40
+        }
+      ],
+      "layout": {
+        "containerMaxWidth": "1280px",
+        "paddingBlock": "64px 64px",
+        "display": "grid",
+        "gridTemplateColumns": "608px 608px",
+        "gap": "64px",
+        "childCount": 2
+      }
+    }
+  ],
+  "globalTypography": {
+    "headingFont": "Inter",
+    "bodyFont": "Inter",
+    "scale": {
+      "h1": {
+        "fontSize": "72px",
+        "fontWeight": "700",
+        "lineHeight": "90px"
+      },
+      "h2": {
+        "fontSize": "48px",
+        "fontWeight": "700",
+        "lineHeight": "60px"
+      },
+      "h3": {
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "lineHeight": "30px"
+      },
+      "body": {
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "29.25px"
+      }
+    }
+  },
+  "navigation": {
+    "isFullWidth": false,
+    "width": "1280px",
+    "backgroundColor": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+    "borderRadius": "3.35544e+07px",
+    "position": "fixed",
+    "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 10px 30px 0px",
+    "logo": {
+      "width": "114px",
+      "height": "40px",
+      "position": "inside-nav",
+      "hasBadge": true,
+      "badgeBackground": "oklab(0.999994 0.0000455677 0.0000200868 / 0.8)",
+      "badgeBorderRadius": "3.35544e+07px"
+    },
+    "links": [
+      {
+        "text": "About",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "600",
+        "letterSpacing": "0.7px",
+        "textTransform": "uppercase",
+        "color": "rgb(72, 106, 173)"
+      },
+      {
+        "text": "Our Businesses",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "600",
+        "letterSpacing": "0.7px",
+        "textTransform": "uppercase",
+        "color": "rgb(72, 106, 173)"
+      },
+      {
+        "text": "Contact",
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": "700",
+        "letterSpacing": "0.7px",
+        "textTransform": "uppercase",
+        "color": "rgb(255, 255, 255)",
+        "isButton": true,
+        "buttonStyle": {
+          "backgroundColor": "rgb(72, 106, 173)",
+          "borderRadius": "3.35544e+07px"
+        }
+      }
+    ]
+  },
+  "sliders": [],
+  "buttons": [
+    {
+      "backgroundColor": "rgb(72, 106, 173)",
+      "color": "rgb(255, 255, 255)",
+      "padding": "16px 40px 16px 40px",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "text": "Know More"
+    },
+    {
+      "backgroundColor": "rgb(71, 169, 149)",
+      "color": "rgb(255, 255, 255)",
+      "borderRadius": "12px",
+      "padding": "16px 0px 16px 0px",
+      "fontSize": "14px",
+      "fontWeight": "700",
+      "text": "Send Message"
+    }
+  ],
+  "videos": [],
+  "footer": {
+    "background": "rgb(27, 32, 45)",
+    "textColor": "rgb(150, 163, 182)",
+    "columns": 2,
+    "linkGroups": [
+      {
+        "heading": "Platform",
+        "links": [
+          {
+            "text": "Home",
+            "href": "/#hero"
+          },
+          {
+            "text": "About",
+            "href": "/#about"
+          },
+          {
+            "text": "Businesses",
+            "href": "/#businesses"
+          }
+        ]
+      },
+      {
+        "heading": "Connect",
+        "links": [
+          {
+            "text": "Contact Us",
+            "href": "/#contact"
+          },
+          {
+            "text": "LinkedIn",
+            "href": "https://www.linkedin.com/company/spvhgroup"
+          }
+        ]
+      }
+    ]
+  },
+  "socialLinks": [
+    {
+      "platform": "linkedin",
+      "href": "https://www.linkedin.com/company/spvhgroup",
+      "location": "footer"
+    }
+  ],
+  "hoverStyles": {
+    ".hover-lift": {
+      "transform": "translateY(-4px)",
+      "boxShadow": "rgba(0, 0, 0, 0.15) 0px 10px 30px"
+    },
+    ".hover-scale": {
+      "transform": "scale(1.05)"
+    },
+    ".hover-glow": {
+      "boxShadow": "0 0 20px color-mix(in srgb, var(--color-primary) 40%, transparent)"
+    }
+  },
+  "cssVariables": {
+    "--color-background": "#fff",
+    "--color-foreground": "#1b202d",
+    "--color-muted-foreground": "#65758b",
+    "--color-border": "#e1e7ef",
+    "--color-surface": "#f8fafc",
+    "--color-primary": "#486aad",
+    "--color-primary-foreground": "#fff",
+    "--color-primary-hover": "#395489",
+    "--color-secondary": "#47a995",
+    "--color-secondary-foreground": "#fff",
+    "--color-secondary-hover": "#388576",
+    "--color-dark": "#1b202d",
+    "--color-dark-foreground": "#fff",
+    "--color-dark-muted": "#96a3b6",
+    "--color-dark-border": "#2a3646",
+    "--color-accent": "#486aad",
+    "--font-family-sans": "\"Inter\", system-ui, sans-serif",
+    "--font-family-heading": "\"Inter\", system-ui, sans-serif"
+  },
+  "externalFonts": []
+}

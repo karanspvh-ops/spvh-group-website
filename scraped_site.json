@@ -1,0 +1,115 @@
+{
+  "success": true,
+  "url": "https://lively-tiger-site.pagesmith.app/",
+  "structured": {
+    "title": "Zosano Pharma",
+    "description": "A private holding group with focused subsidiaries in wealth management and alternative investments.",
+    "url": "https://lively-tiger-site.pagesmith.app/",
+    "imageCount": 25,
+    "branding": {
+      "colors": {
+        "primary": "#1B202D",
+        "secondary": "#96A3B6",
+        "accent": "#486AAD",
+        "background": "#FFFFFF",
+        "textPrimary": "#808080",
+        "link": "#486AAD"
+      },
+      "typography": {
+        "fontFamilies": {
+          "primary": "Inter",
+          "heading": "Inter"
+        },
+        "fontStacks": {
+          "heading": [
+            "Inter",
+            "system-ui",
+            "sans-serif"
+          ],
+          "body": [
+            "Inter",
+            "system-ui",
+            "sans-serif"
+          ],
+          "paragraph": [
+            "Inter",
+            "system-ui",
+            "sans-serif"
+          ]
+        },
+        "fontSizes": {
+          "h1": "72px",
+          "h2": "42px",
+          "body": "24px"
+        }
+      },
+      "spacing": {
+        "baseUnit": 8,
+        "borderRadius": "0px"
+      },
+      "favicon": "https://cdn.pagesmith.app/1fec6918/images/favicon-fcf9a964.svg",
+      "faviconCdn": "https://cdn.pagesmith.app/347b1a00/images/favicon-fcf9a964.svg"
+    },
+    "pages": [
+      {
+        "slug": "index",
+        "path": "/",
+        "title": "Zosano Pharma",
+        "file": "data/pages/index.md"
+      }
+    ],
+    "availablePages": [
+      {
+        "path": "/verticals/hospitality/",
+        "label": "Hospitality - SPVH Group",
+        "slug": "verticals-hospitality",
+        "scraped": false
+      },
+      {
+        "path": "/verticals/automotive/",
+        "label": "Automotive - SPVH Group",
+        "slug": "verticals-automotive",
+        "scraped": false
+      },
+      {
+        "path": "/verticals/real-estate-interior-design/",
+        "label": "Real Estate Interior Design - SPVH Group",
+        "slug": "verticals-real-estate-interior-design",
+        "scraped": false
+      },
+      {
+        "path": "/verticals/technology-research/",
+        "label": "Technology Research - SPVH Group",
+        "slug": "verticals-technology-research",
+        "scraped": false
+      },
+      {
+        "path": "/verticals/financial-services/",
+        "label": "Financial Services - SPVH Group",
+        "slug": "verticals-financial-services",
+        "scraped": false
+      },
+      {
+        "path": "/verticals/media-entertainment/",
+        "label": "Media Entertainment - SPVH Group",
+        "slug": "verticals-media-entertainment",
+        "scraped": false
+      },
+      {
+        "path": "/about/",
+        "label": "About",
+        "slug": "about",
+        "scraped": false
+      }
+    ]
+  },
+  "metadata": {
+    "scraper": "firecrawl-crawl-endpoint",
+    "timestamp": "2026-04-07T07:38:00.158Z",
+    "homepageContentLength": 4954,
+    "imageCount": 25,
+    "hasBranding": true,
+    "pagesDiscovered": 7,
+    "pagesScraped": 1
+  }
+}

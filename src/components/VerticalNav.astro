@@ -1,0 +1,43 @@
+---
+const verticals = [
+  { name: 'Financial Services', href: '/financial-services' },
+  { name: 'Media & Entertainment', href: '/media-entertainment' },
+  { name: 'Hospitality', href: '/hospitality' },
+  { name: 'Automotive', href: '/verticals/automotive' },
+  { name: 'Technology & Research', href: '/verticals/technology-research' },
+  { name: 'Real Estate & Interior Design', href: '/verticals/real-estate-interior-design' },
+];
+
+const { activePath } = Astro.props;
+---
+
+<nav class="w-full border-b border-border bg-white relative z-10" data-ps="src/components/VerticalNav.astro:root">
+  <div class="w-full" data-ps="src/components/VerticalNav.astro:container">
+    <div class="flex items-center justify-start xl:justify-center gap-2 md:gap-3 overflow-x-auto no-scrollbar py-3 px-4 md:px-8 snap-x snap-mandatory mx-auto max-w-[1400px]" data-ps="src/components/VerticalNav.astro:scroll">
+      {verticals.map((v) => (
+        <a 
+          href={v.href}
+          class:list={[
+            "whitespace-nowrap px-6 py-2.5 text-[15px] font-medium transition-all duration-300 rounded-full snap-center shrink-0 border border-transparent",
+            activePath === v.href 
+              ? "bg-primary text-white shadow-lg shadow-primary/25 scale-105 z-10 font-semibold" 
+              : "text-secondary hover:text-secondary-hover hover:bg-secondary/10 hover:border-secondary/20"
+          ]}
+          data-ps={`src/components/VerticalNav.astro:link-${v.name.toLowerCase().replace(/\s+/g, '-')}`}
+        >
+          {v.name}
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>

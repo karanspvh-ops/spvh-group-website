@@ -1,0 +1,242 @@
+---
+import '@/styles/global.css';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import SEOHead from '@/components/SEOHead.astro';
+import ContactModal from '@/components/ContactModal.astro';
+
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  type?: string;
+  jsonLd?: Record<string, any>;
+}
+
+const { title, description, image, type, jsonLd } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/svg+xml" href="https://pagesmith-cdn.com/347b1a00/favicons/favicon-6c5a4f33.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://pagesmith-cdn.com/347b1a00/favicons/apple-touch-icon-6c5a4f33.png" />
+    <SEOHead
+      title={title}
+      description={description}
+      image={image}
+      type={type}
+      jsonLd={jsonLd}
+    />
+    <!-- Mark JS as enabled immediately -->
+    <script is:inline>document.documentElement.classList.add('js');</script>
+    </head>
+    <body data-ps="src/layouts/BaseLayout.astro:4vj8al">
+      <Navigation />
+      <main data-ps="src/layouts/BaseLayout.astro:yuyoow">
+        <slot />
+      </main>
+      <Footer />
+
+      <ContactModal />
+
+      <!-- Scroll to Top Button -->
+      <button
+        id="scroll-to-top"
+        aria-label="Scroll to top"
+        class="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-primary text-white shadow-lg opacity-0 translate-y-10 pointer-events-none transition-all duration-300 hover:bg-primary-hover hover:scale-110 active:scale-95 group"
+       data-ps="src/layouts/BaseLayout.astro:gw75b4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="w-6 h-6 transition-transform group-hover:-translate-y-1"
+        >
+          <path d="m18 15-6-6-6 6"/>
+        </svg>
+      </button>
+
+      <!-- Animation Styles -->
+      <style is:inline>
+        /* Scroll Reveal - Default: visible (for SEO & no-JS) */
+        .reveal,
+        .reveal-left,
+        .reveal-right,
+        .reveal-scale {
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        /* Only hide when JS is enabled */
+        .js .reveal,
+        .js .reveal-left,
+        .js .reveal-right,
+        .js .reveal-scale {
+          opacity: 0;
+        }
+
+        .js .reveal { transform: translateY(30px); }
+        .js .reveal-left { transform: translateX(-30px); }
+        .js .reveal-right { transform: translateX(30px); }
+        .js .reveal-scale { transform: scale(0.95); }
+
+        /* Revealed state */
+        .js .reveal.active,
+        .js .reveal-left.active,
+        .js .reveal-right.active,
+        .js .reveal-scale.active {
+          opacity: 1;
+          transform: translate(0) scale(1);
+        }
+
+        /* Stagger Delays */
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+        .reveal-delay-5 { transition-delay: 0.5s; }
+
+        /* Hover Effects */
+        .hover-lift {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .hover-scale {
+          transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+          transform: scale(1.05);
+        }
+
+        .hover-glow {
+          transition: box-shadow 0.3s ease;
+        }
+
+        .hover-glow:hover {
+          box-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 40%, transparent);
+        }
+
+        /* Reduced Motion Support */
+        @media (prefers-reduced-motion: reduce) {
+          .reveal,
+          .reveal-left,
+          .reveal-right,
+          .reveal-scale,
+          .hover-lift,
+          .hover-scale,
+          .hover-glow {
+            transition: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+          }
+        }
+      </style>
+
+      <!-- Scroll Reveal Script -->
+      <script is:inline>
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+          }
+        );
+
+        document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale')
+          .forEach((el) => revealObserver.observe(el));
+
+        // Scroll to Top Logic
+        const scrollTopBtn = document.getElementById('scroll-to-top');
+        const defaultIcon = scrollTopBtn.innerHTML;
+        let isAnimating = false;
+        
+        window.addEventListener('scroll', () => {
+          if (isAnimating) return;
+          if (window.scrollY > 400) {
+            scrollTopBtn.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+            scrollTopBtn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+          } else {
+            scrollTopBtn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+            scrollTopBtn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+          }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+          if (isAnimating) return;
+          isAnimating = true;
+          
+          // Mechanically transform into a minimal SVG rocket
+          scrollTopBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(-45deg); display: block; margin: 0 auto; transition: transform 0.3s;"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>`;
+          
+          // Scroll page
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+          
+          // Wait for scroll to reach top
+          const checkScroll = setInterval(() => {
+            if (window.scrollY === 0) {
+              clearInterval(checkScroll);
+              
+              // Spark dollars from the rocket's head (top of the button)
+              const rect = scrollTopBtn.getBoundingClientRect();
+              for (let i = 0; i < 10; i++) {
+                const dollar = document.createElement('div');
+                // Minimal SVG Banknote
+                dollar.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#47a995" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>`;
+                dollar.style.position = 'fixed';
+                dollar.style.left = `${rect.left + rect.width / 2 - 12}px`;
+                dollar.style.top = `${rect.top - 15}px`; // Start from above the rocket
+                dollar.style.zIndex = '9999';
+                dollar.style.pointerEvents = 'none';
+                dollar.style.transition = 'transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease-in';
+                
+                document.body.appendChild(dollar);
+                
+                // Explode outwards and downwards from the top of the rocket
+                requestAnimationFrame(() => {
+                  setTimeout(() => {
+                    const xOff = (Math.random() - 0.5) * 100;
+                    const yOff = Math.random() * 80 + 20;
+                    dollar.style.transform = `translate(${xOff}px, ${yOff}px) rotate(${Math.random() * 360}deg)`;
+                    dollar.style.opacity = '0';
+                  }, 10);
+                });
+                
+                // Cleanup
+                setTimeout(() => {
+                  dollar.remove();
+                }, 800);
+              }
+              
+              // Reset button back to arrow
+              setTimeout(() => {
+                scrollTopBtn.innerHTML = defaultIcon;
+                scrollTopBtn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+                scrollTopBtn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+                isAnimating = false;
+              }, 800);
+            }
+          }, 50);
+        });
+      </script>
+    </body>
+  </html>

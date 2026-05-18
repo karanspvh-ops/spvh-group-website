@@ -1,0 +1,131 @@
+---
+const slides = [
+  {
+  headline: 'Where <span class="text-primary">Diversity</span> meets <span class="text-secondary">Business</span>',
+  subheadline: "At SPVH, we focus on building a diverse enterprise which has a new age<br />approach & strong business fundamentals.",
+  image: "https://images.unsplash.com/photo-1709136804744-4ae50bf6da58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTQzNzh8MHwxfHNlYXJjaHw2fHxzZWAlMjBsaW5rfGVufDB8fHx8MTc3NjE2NDY3MXww&ixlib=rb-4.1.0&q=80&w=1200&auto=format",
+  headlineClass: "font-bold"
+  },
+  {
+  headline: 'Building Enterprise with “<span class="text-primary">Infinite</span> <span class="text-secondary">Legacy</span>”',
+  subheadline: "With a fearless & limitless approach SPVH Group is committed to build business that outlast generations.",
+  image: "https://images.pexels.com/photos/13907756/pexels-photo-13907756.jpeg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTQzNzh8MHwxfHNlYXJjaHwyfHxsZWdhY3l8ZW58MHx8fHwxNzc2MTYzNTE1fDA&ixlib=rb-4.1.0&q=80&w=1200&auto=format",
+  headlineClass: "font-normal"
+  },
+  {
+  headline: 'Building “<span class="text-primary">Your Wealth</span> <span class="text-secondary">Journey</span>” With us',
+  subheadline: "Select from the gamut of sophisticated regulated financial services across different asset class",
+  image: "https://images.unsplash.com/photo-1574974915714-b6ae26af1727?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTQzNzh8MHwxfHNlYXJjaHwxN3x8d2VhbHRofGVufDB8fHx8MTc3NjE2MzQ3M3ww&ixlib=rb-4.1.0&q=80&w=1200&auto=format",
+  headlineClass: "font-normal"
+  },
+  {
+  headline: '<span class="text-primary">Innovation</span> is the <span class="text-secondary">Core</span>',
+  subheadline: "Being ahead of the curve is a basic check at SPVH Group",
+  image: "https://images.unsplash.com/photo-1529854140025-25995121f16f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MTQzNzh8MHwxfHNlYXJjaHwzfHxpbm5vdmF0aW9ufGVufDB8fHx8MTc3NjE2MzQyMXww&ixlib=rb-4.1.0&q=80&w=1200&auto=format",
+  headlineClass: "font-normal"
+  }
+];
+---
+
+<section id="hero" class="relative h-[90vh] min-h-[600px] w-full overflow-hidden" data-ps="src/components/home/Hero.astro:carousel">
+  <div id="hero-slider" class="relative h-full w-full" data-ps="src/components/home/Hero.astro:slider-container">
+    {slides.map((slide, index) => (
+      <div 
+        class={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${index === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+        data-slide={index}
+       data-ps={`src/components/home/Hero.astro:ecxgf9-${index}`}>
+        <div class="absolute inset-0 bg-black/50 z-10" data-ps={`src/components/home/Hero.astro:ecxgfa-${index}`}></div>
+        <img 
+          src={slide.image} 
+          alt={slide.headline}
+          class="absolute inset-0 w-full h-full object-cover" data-ps={`src/components/home/Hero.astro:fibi80-${index}`} />
+        <div class="relative z-20 h-full flex flex-col items-center justify-center text-center px-6 max-w-5xl mx-auto" data-ps={`src/components/home/Hero.astro:ecxgfb-${index}`}>
+          <h1 class={`text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight hero-animate ${slide.headlineClass}`} data-ps={`src/components/home/Hero.astro:p3vdzp-${index}`} set:html={slide.headline} />
+          <p class="text-lg md:text-xl text-white/90 max-w-2xl hero-animate hero-animate-delay-1" data-ps={`src/components/home/Hero.astro:ijv6zg-${index}`} set:html={slide.subheadline} />
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Persistent CTA Button -->
+  <div class="absolute bottom-24 left-1/2 -translate-x-1/2 z-30" data-ps="src/components/home/Hero.astro:fixed-cta">
+    <a href="#businesses" class="bg-primary hover:bg-primary-hover text-white px-10 py-4 rounded-full font-bold uppercase tracking-wider transition-all hero-animate hero-animate-delay-2 inline-block whitespace-nowrap" data-ps="src/components/home/Hero.astro:fixed-cta-link">
+      Explore Our Verticals
+    </a>
+  </div>
+
+  <!-- Indicators -->
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex gap-3" data-ps="src/components/home/Hero.astro:indicators">
+    {slides.map((_, index) => (
+      <button 
+        class={`w-3 h-3 rounded-full border border-white transition-all ${index === 0 ? 'bg-white w-8' : 'bg-transparent hover:bg-white/50'}`}
+        data-indicator={index}
+        aria-label={`Go to slide ${index + 1}`}
+       data-ps={`src/components/home/Hero.astro:k8fx4o-${index}`}></button>
+    ))}
+  </div>
+</section>
+
+<script is:inline>
+  function initHeroSlider() {
+    const slider = document.getElementById('hero-slider');
+    if (!slider) return;
+
+    const slides = slider.querySelectorAll('[data-slide]');
+    const indicators = document.querySelectorAll('[data-indicator]');
+    let currentSlide = 0;
+    const slideCount = slides.length;
+    let interval;
+
+    function goToSlide(index) {
+      if (!slides[currentSlide] || !indicators[currentSlide]) return;
+      
+      slides[currentSlide].classList.replace('opacity-100', 'opacity-0');
+      slides[currentSlide].classList.replace('z-10', 'z-0');
+      indicators[currentSlide].classList.remove('bg-white', 'w-8');
+      indicators[currentSlide].classList.add('bg-transparent', 'w-3');
+
+      currentSlide = index;
+
+      slides[currentSlide].classList.replace('opacity-0', 'opacity-100');
+      slides[currentSlide].classList.replace('z-0', 'z-10');
+      indicators[currentSlide].classList.remove('bg-transparent', 'w-3');
+      indicators[currentSlide].classList.add('bg-white', 'w-8');
+    }
+
+    function nextSlide() {
+      goToSlide((currentSlide + 1) % slideCount);
+    }
+
+    function startAutoplay() {
+      interval = setInterval(nextSlide, 6000);
+    }
+
+    function resetAutoplay() {
+      clearInterval(interval);
+      startAutoplay();
+    }
+
+    function pauseAutoplay() {
+      clearInterval(interval);
+    }
+
+    slider.addEventListener('mouseenter', pauseAutoplay);
+    slider.addEventListener('mouseleave', startAutoplay);
+
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+        goToSlide(index);
+        resetAutoplay();
+      });
+    });
+
+    startAutoplay();
+  }
+
+  // Initialize on load
+  initHeroSlider();
+  
+  // Re-initialize after view transitions
+  document.addEventListener('astro:after-swap', initHeroSlider);
+</script>
