@@ -1,0 +1,68 @@
+---
+// Each partner: { name, logo?: path to existing image }
+// If logo is omitted, an elegant text-based placeholder card is rendered.
+// To add a logo later, drop the file in public/images/partners/ and set the `logo` field.
+const partners = [
+  { name: "Adani",            logo: "/images/Adani logo.jpeg" },
+  { name: "Jaypee",           logo: "/images/Jaypee group logo.jpeg" },
+  { name: "Raymond" },
+  { name: "MMRDA",            logo: "/images/MMRDA Logo.jpeg" },
+  { name: "Oberoi Realty",    logo: "/images/Oberoi Logo.jpeg" },
+  { name: "Times Group" },
+  { name: "TiE Mumbai" },
+  { name: "Matrix Partners" },
+  { name: "BPA Consulting" },
+  { name: "Khaitan & Co" },
+  { name: "ADNOC" },
+  { name: "Sofina Capital" },
+  { name: "GQG Partners" },
+  { name: "The Quorum" },
+  { name: "JW Marriott" },
+  { name: "Taj Hotels" },
+  { name: "Leo Burnett" },
+  { name: "Bain & Co",        logo: "/images/logo_red_bain and company.svg" },
+];
+---
+
+<section class="py-24 px-6 lg:px-12 bg-white" data-ps="src/components/about/Alliances.astro:root">
+  <div class="max-w-[1280px] mx-auto" data-ps="src/components/about/Alliances.astro:container">
+
+    <!-- Section Header -->
+    <div class="text-center mb-16 hero-animate" data-ps="src/components/about/Alliances.astro:header">
+      <h2 class="text-4xl md:text-5xl font-bold text-dark tracking-tight mb-6" data-ps="src/components/about/Alliances.astro:heading">
+        Our Alliances and JV Partnerships
+      </h2>
+      <p class="text-lg text-muted-foreground max-w-2xl mx-auto" data-ps="src/components/about/Alliances.astro:tagline">
+        Building enduring value through strategic alliances with global corporations, leading institutions, and visionary partners across industries.
+      </p>
+    </div>
+
+    <!-- Logo Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4 md:gap-6" data-ps="src/components/about/Alliances.astro:grid">
+      {partners.map((p, i) => (
+        <div
+          class="group relative bg-white border border-border/60 rounded-2xl aspect-[3/2] flex items-center justify-center p-5 md:p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/30 hover:-translate-y-1 reveal"
+          data-ps={`src/components/about/Alliances.astro:card-${i}`}
+        >
+          {p.logo ? (
+            <img
+              src={p.logo}
+              alt={p.name}
+              class="max-w-full max-h-full object-contain grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+              loading="lazy"
+              data-ps={`src/components/about/Alliances.astro:img-${i}`}
+            />
+          ) : (
+            <span
+              class="text-center text-[13px] md:text-[15px] font-semibold uppercase tracking-wider text-muted-foreground group-hover:text-primary transition-colors duration-300 leading-tight"
+              data-ps={`src/components/about/Alliances.astro:placeholder-${i}`}
+            >
+              {p.name}
+            </span>
+          )}
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
