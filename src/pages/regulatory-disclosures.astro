@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const lastUpdated = "May 2026";
 ---
 
 <BaseLayout title="Regulatory Disclosures">
@@ -25,43 +27,123 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 
       <!-- Content -->
       <div class="max-w-[800px]" data-ps="src/pages/regulatory-disclosures.astro:5xygis">
-        <h1 class="text-dark text-4xl md:text-5xl font-bold mb-12" data-ps="src/pages/regulatory-disclosures.astro:4n4c2z">Regulatory Disclosures</h1>
+        <h1 class="text-dark text-4xl md:text-5xl font-bold mb-4" data-ps="src/pages/regulatory-disclosures.astro:4n4c2z">Regulatory Disclosures</h1>
+        <p class="text-muted-foreground mb-12">Last Updated: {lastUpdated}</p>
 
-        <div class="space-y-10" data-ps="src/pages/regulatory-disclosures.astro:5xygir">
-          <section data-ps="src/pages/regulatory-disclosures.astro:ur3mst">
-            <h2 class="text-dark text-2xl font-bold mb-4" data-ps="src/pages/regulatory-disclosures.astro:a1al4q">1. No Offer or Solicitation</h2>
-            <p class="text-foreground leading-relaxed" data-ps="src/pages/regulatory-disclosures.astro:2ocsk1">
-              The information contained on this website does not constitute an offer to sell, a solicitation of an offer to buy, or a recommendation for any security, investment product, or service. Capital deployment is subject to definitive legal documentation and rigorous due diligence.
-            </p>
+        <div class="space-y-12" data-ps="src/pages/regulatory-disclosures.astro:5xygir">
+
+          <!-- 1. No Offer, Solicitation, or Investment Advice -->
+          <section>
+            <h2 class="text-dark text-2xl font-bold mb-4">1. No Offer, Solicitation, or Investment Advice</h2>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">1.1. Informational Purposes Only</h3>
+            <p class="text-foreground leading-relaxed">The information, research, market intelligence, and aesthetic representations provided across the SPVH Group digital ecosystem — including our primary website, client portals, whitepapers, and digital communications — are strictly for informational, educational, and corporate-overview purposes. Nothing contained within our digital or printed materials constitutes a legally binding offer to sell, a solicitation of an offer to buy, or a recommendation for any security, financial instrument, real-estate asset, or corporate investment vehicle.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">1.2. Requirement of Definitive Documentation</h3>
+            <p class="text-foreground leading-relaxed">SPVH Group operates exclusively through highly structured, privately negotiated transactions. Any formal offer, solicitation, or commitment of capital across our Financial Services, Real Estate, Automotive, or Technology verticals will only be made pursuant to definitive, legally binding documentation. This includes, but is not limited to, Confidential Private Placement Memorandums (PPMs), Joint Venture (JV) Agreements, structured term sheets, and formalised subscription agreements, which will be provided only to qualified, vetted, and eligible investors or institutional partners under strict confidentiality.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">1.3. Jurisdictional Restrictions</h3>
+            <p class="text-foreground leading-relaxed">The services, investment opportunities, and advisory frameworks detailed on this platform are not universally available. They are not directed at, nor intended for distribution to or use by, any person or entity in any jurisdiction or country where such distribution, publication, availability, or use would be contrary to local law or regulation, or which would subject SPVH Group or its affiliates to any unauthorised registration or licensing requirements. Users accessing our platforms do so on their own initiative and are solely responsible for compliance with their applicable local regulatory frameworks.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">1.4. Absence of Professional Advice</h3>
+            <p class="text-foreground leading-relaxed">The content provided by SPVH Group does not constitute, and should not be construed as, personalised investment, legal, tax, accounting, or regulatory advice. The financial models, asset valuations, and yield projections discussed across our platforms are illustrative and based on macroeconomic assumptions that are subject to change. Prospective clients, co-investors, and JV partners must conduct their own independent due diligence and consult with their own legal, tax, and financial advisors prior to executing any transaction, committing capital, or entering into a strategic partnership with SPVH Group.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">1.5. Forward-Looking Statements</h3>
+            <p class="text-foreground leading-relaxed">Certain statements across our platforms may constitute "forward-looking statements" regarding market trends, anticipated asset appreciation, or the future operational performance of our investments. These statements are inherently speculative and are based on our current institutional perspectives and available data. Actual market realities, economic conditions, and investment outcomes may differ materially from these projections. SPVH Group assumes no obligation to update or revise any forward-looking statements to reflect subsequent events or altered circumstances.</p>
           </section>
 
-          <section data-ps="src/pages/regulatory-disclosures.astro:ur3msu">
-            <h2 class="text-dark text-2xl font-bold mb-4" data-ps="src/pages/regulatory-disclosures.astro:a1al4p">2. Investment Risks</h2>
-            <p class="text-foreground leading-relaxed" data-ps="src/pages/regulatory-disclosures.astro:2ocsk2">
-              Alternative investments, early-stage venture capital, and private equity carry a high degree of risk. Historical performance is not indicative of future results. Investors and founders should be aware that capital may be fully at risk and illiquid for extended periods.
-            </p>
+          <!-- 2. Investment Risks and Market Volatility -->
+          <section>
+            <h2 class="text-dark text-2xl font-bold mb-4">2. Investment Risks and Market Volatility</h2>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">2.1. General Risk of Capital Loss</h3>
+            <p class="text-foreground leading-relaxed">All investments inherently involve a substantial degree of risk, including the potential for the complete loss of principal capital. SPVH Group's investment strategies, whether deployed in public capital markets, private equity, or real assets, are designed for sophisticated, high-net-worth, and institutional partners who have the financial capacity to bear significant risk. Past performance, historical asset appreciation, and projected yields are not indicative of, nor do they guarantee, future results.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">2.2. Asset-Specific and Sector Risks</h3>
+            <p class="text-foreground leading-relaxed mb-3">The diverse portfolio of assets developed, advised upon, and managed by SPVH Group is subject to highly specific, sector-driven risks that fall outside of the firm's direct control. These include, but are not limited to:</p>
+            <ul class="space-y-3 text-foreground list-disc pl-5">
+              <li><strong class="text-dark">Real Estate &amp; Hospitality:</strong> Investments in real property and hospitality assets are subject to development delays, zoning and regulatory changes, fluctuations in local property demand, construction cost overruns, and macroeconomic impacts on the luxury travel and housing sectors.</li>
+              <li><strong class="text-dark">Technology &amp; Research:</strong> Venture-stage and growth-equity investments in proprietary technology and SaaS platforms carry a high risk of total failure due to rapid technological obsolescence, intense market competition, and the inability to achieve or monetise intellectual property (IP) defensibility.</li>
+              <li><strong class="text-dark">Media &amp; Entertainment:</strong> Capital allocated to content production and media distribution is subject to unpredictable shifts in consumer preference, cultural resonance, and global distribution-network disruptions.</li>
+              <li><strong class="text-dark">Automotive:</strong> Investments in significant mobility assets and luxury vehicles are exposed to risks of physical degradation, high maintenance and restoration costs, shifts in collector-market sentiment, and uninsurable physical damage.</li>
+            </ul>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">2.3. Illiquidity of Private Assets</h3>
+            <p class="text-foreground leading-relaxed">Many of the investment opportunities and joint ventures structured by SPVH Group involve highly illiquid, private assets. Unlike publicly traded securities, there is no recognised secondary market for private equity stakes, structured Joint Ventures, direct real-estate holdings, or physical automotive assets. Investors and strategic partners must be prepared to hold these investments for extended, potentially indefinite periods, as the immediate liquidation of such assets may be impossible or result in a severe discount to intrinsic value.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">2.4. Macroeconomic and Systemic Volatility</h3>
+            <p class="text-foreground leading-relaxed">The valuation of all assets within the SPVH Group ecosystem is inextricably linked to broader macroeconomic conditions. Global market volatility, geopolitical instability, inflationary pressures, fluctuations in interest rates, and changes in currency-exchange rates can materially and adversely affect the execution of our business strategies, the cost of project financing, and the ultimate yield of our asset portfolios.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">2.5. Regulatory and Tax Uncertainties</h3>
+            <p class="text-foreground leading-relaxed">The regulatory environments governing financial services, real-estate development, cross-border capital flows, and data technologies are complex and subject to continuous evolution. Sudden changes in tax codes, environmental regulations, zoning laws, or financial-compliance mandates in any jurisdiction where SPVH Group operates could drastically alter the viability, cost structure, or profitability of a given investment or strategic partnership. We assume no responsibility for mitigating the impact of unforeseen legislative or regulatory shifts on your capital or corporate structure.</p>
           </section>
 
-          <section data-ps="src/pages/regulatory-disclosures.astro:ur3msv">
-            <h2 class="text-dark text-2xl font-bold mb-4" data-ps="src/pages/regulatory-disclosures.astro:a1al4o">3. Regulatory Compliance</h2>
-            <p class="text-foreground leading-relaxed" data-ps="src/pages/regulatory-disclosures.astro:2ocsk3">
-              SPVH Private Limited operates as a specialized holding company in accordance with the Companies Act, 2013, and applicable guidelines set forth by the Securities and Exchange Board of India (SEBI) and the Reserve Bank of India (RBI). Specific investment vehicles within the SPVH ecosystem may hold separate regulatory registrations.
-            </p>
+          <!-- 3. Regulatory Compliance and Statutory Adherence -->
+          <section>
+            <h2 class="text-dark text-2xl font-bold mb-4">3. Regulatory Compliance and Statutory Adherence</h2>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">3.1. Uncompromising Legal and Fiduciary Mandate</h3>
+            <p class="text-foreground leading-relaxed">SPVH Group operates its diverse portfolio of business verticals — spanning institutional finance, real estate, technology, and physical asset acquisition — in strict accordance with applicable national, regional, and international laws. We maintain an uncompromising commitment to corporate governance, fiduciary responsibility, and regulatory adherence. By engaging with our advisory teams, digital platforms, or investment vehicles, all clients, co-investors, and operational partners implicitly agree to adhere to the highest standards of lawful conduct.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">3.2. AML, KYC, and CTF Protocols</h3>
+            <p class="text-foreground leading-relaxed">To protect the integrity of global financial systems and our internal ecosystem, SPVH Group enforces rigorous Anti-Money Laundering (AML), Know Your Customer (KYC), and Counter-Terrorism Financing (CTF) protocols. Prior to the formalisation of any advisory relationship, Joint Venture, or capital commitment, all prospective partners must undergo comprehensive institutional onboarding. This process requires the submission of verifiable identification, corporate structuring documents, proof of beneficial ownership, and transparent declarations regarding the source of funds.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">3.3. Right of Refusal and Engagement Termination</h3>
+            <p class="text-foreground leading-relaxed">We reserve the absolute right, at our sole discretion and without liability, to refuse service, reject capital commitments, or immediately terminate any existing advisory or operational relationship if a client or partner fails to satisfy our compliance requirements. Furthermore, SPVH Group will terminate engagements if we determine that continuing the relationship may expose the firm to regulatory scrutiny, reputational damage, or associations with illicit financial activities, sanctioned entities, or politically exposed persons (PEPs) operating outside of acceptable risk parameters.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">3.4. Mandatory Statutory Reporting</h3>
+            <p class="text-foreground leading-relaxed">As a highly regulated institutional entity, SPVH Group is legally obligated to cooperate fully with national financial regulators, tax authorities, and law-enforcement agencies. We reserve the right to monitor transaction flows and ecosystem engagements. In the event of suspected fraud, money laundering, or other illicit activities, we are legally mandated to file Suspicious Activity Reports (SARs) or equivalent disclosures to the relevant financial-intelligence units. We may execute these statutory reporting duties without providing prior notice or disclosure to the subject of the investigation.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">3.5. Multi-Jurisdictional Licensing and Limitations</h3>
+            <p class="text-foreground leading-relaxed">The diverse services offered under the SPVH Group umbrella may be provided by specific, wholly-owned subsidiaries, affiliates, or licensed third-party partners depending on the regulatory requirements of the jurisdiction in which the transaction occurs. Not all services, investment models, or advisory frameworks are available in all jurisdictions. The provision of specific financial, legal, or real-estate advisory services is strictly contingent upon the possession of the requisite localised licences and regulatory approvals by SPVH Group or its designated operating entities.</p>
           </section>
 
-          <section data-ps="src/pages/regulatory-disclosures.astro:ur3msw">
-            <h2 class="text-dark text-2xl font-bold mb-4" data-ps="src/pages/regulatory-disclosures.astro:a1al4n">4. Forward-Looking Statements</h2>
-            <p class="text-foreground leading-relaxed" data-ps="src/pages/regulatory-disclosures.astro:2ocskp">
-              Certain materials on this platform may contain forward-looking statements regarding market trends, business strategies, or future performance. These statements involve inherent risks and uncertainties. Actual results may differ materially from those projected.
-            </p>
+          <!-- 4. Forward-Looking Statements and Projections -->
+          <section>
+            <h2 class="text-dark text-2xl font-bold mb-4">4. Forward-Looking Statements and Projections</h2>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">4.1. Identification of Forward-Looking Content</h3>
+            <p class="text-foreground leading-relaxed">Certain materials, financial models, executive summaries, and digital content distributed by SPVH Group across our business verticals contain "forward-looking statements." These statements can typically be identified by the use of predictive terminology such as "anticipate," "project," "target," "expect," "estimate," "forecast," "intend," "believe," or the negative variations thereof. This includes any graphical representations of projected capital appreciation, anticipated operational milestones, targeted real-estate development timelines, or expected yields.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">4.2. Inherent Speculation and Uncertainty</h3>
+            <p class="text-foreground leading-relaxed">Forward-looking statements are fundamentally speculative. They represent SPVH Group's current institutional perspectives, economic models, and internal assumptions based on the data available at the time of publication. They are not historical facts, nor are they legally binding guarantees of future performance. The actual operational execution, financial outcomes, and asset valuations may deviate materially — and adversely — from the projections outlined in our materials.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">4.3. Exogenous Variables and Market Dynamics</h3>
+            <p class="text-foreground leading-relaxed mb-3">The projections provided by our advisory and investment teams are subject to a multitude of known and unknown risks, uncertainties, and exogenous variables that fall completely outside the control of SPVH Group. Factors that could cause actual results to differ materially from our forecasts include:</p>
+            <ul class="space-y-3 text-foreground list-disc pl-5">
+              <li><strong class="text-dark">Capital Markets:</strong> Unanticipated shifts in global interest rates, inflation metrics, or severe illiquidity events.</li>
+              <li><strong class="text-dark">Real Estate &amp; Hospitality:</strong> Supply-chain disruptions, localised zoning modifications, fluctuating construction-material costs, and shifts in luxury consumer demand.</li>
+              <li><strong class="text-dark">Technology &amp; Enterprise:</strong> Rapid technological obsolescence, delayed regulatory approvals for proprietary IP, and the emergence of disruptive, heavily capitalised competitors.</li>
+              <li><strong class="text-dark">Macro-Geopolitics:</strong> Geopolitical conflicts, sweeping shifts in international trade policies, or systemic global-health crises impacting cross-border logistics and mobility assets.</li>
+            </ul>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">4.4. Disclaimer of Liability and Obligation to Update</h3>
+            <p class="text-foreground leading-relaxed">SPVH Group, alongside its managing partners, affiliates, and operating subsidiaries, explicitly disclaims any liability for the accuracy, completeness, or eventual realisation of any forward-looking statements. Furthermore, while we continually monitor our portfolios, SPVH Group assumes no legal or fiduciary obligation to publicly or privately update, revise, or correct any forward-looking statements — whether as a result of new market intelligence, subsequent events, altered economic conditions, or otherwise.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">4.5. Prohibition of Undue Reliance</h3>
+            <p class="text-foreground leading-relaxed">Prospective clients, Joint Venture partners, and co-investors are strictly cautioned against placing undue reliance on forward-looking statements when making capital-allocation or strategic-partnership decisions. All financial modelling and projected timelines must be viewed strictly as illustrative scenarios rather than definitive outcomes. You are explicitly advised to rely on your own independent due diligence, rigorous stress-testing, and the counsel of your designated legal and financial advisors.</p>
           </section>
 
-          <section data-ps="src/pages/regulatory-disclosures.astro:ur3msx">
-            <h2 class="text-dark text-2xl font-bold mb-4" data-ps="src/pages/regulatory-disclosures.astro:a1al4m">5. Advisory Disclaimer</h2>
-            <p class="text-foreground leading-relaxed" data-ps="src/pages/regulatory-disclosures.astro:2ocskq">
-              SPVH does not provide tax, legal, or accounting advice through this public platform. Users and prospective partners should consult their own professional advisors prior to entering into any transaction.
-            </p>
+          <!-- 5. Advisory Disclaimer and Limitation of Scope -->
+          <section>
+            <h2 class="text-dark text-2xl font-bold mb-4">5. Advisory Disclaimer and Limitation of Scope</h2>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">5.1. Nature of Strategic Advisory</h3>
+            <p class="text-foreground leading-relaxed">SPVH Group provides high-level strategic, operational, and capital-structuring advisory services tailored for institutional partners, developers, and ultra-high-net-worth individuals. The insights, feasibility assessments, spatial design concepts, and financial models provided during preliminary consultations or distributed via our digital platforms are intended strictly to facilitate strategic discussions and outline potential value-creation frameworks. They do not constitute comprehensive, guaranteed solutions to specific corporate or financial challenges.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">5.2. Exclusion of Legal, Tax, and Accounting Advice</h3>
+            <p class="text-foreground leading-relaxed">SPVH Group is a private holding and investment company; we are not a licensed law firm, certified public-accounting firm, or independent tax-advisory practice. No communication from our managing partners, sector specialists, or digital platforms should be construed as legal, tax, accounting, or regulatory counsel. The structuring of capital, the execution of Joint Ventures, and the acquisition of real or physical assets carry profound tax and legal implications. Clients and partners must engage their own independent, licensed legal and financial professionals to assess the specific impact of any transaction or advisory strategy on their corporate or personal standing.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">5.3. Absence of Pre-Contractual Fiduciary Relationship</h3>
+            <p class="text-foreground leading-relaxed">The dissemination of market intelligence, proprietary research, or preliminary project proposals does not, and is not intended to, establish a formal fiduciary, advisory, or principal-agent relationship between SPVH Group and the recipient. A legally binding fiduciary mandate or formal advisory relationship with SPVH Group is strictly contingent upon the mutual execution of definitive agreements — such as a formal Advisory Mandate, Joint Venture Agreement, or Asset Management Contract — which will explicitly define the scope, limitations, and liabilities of the engagement.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">5.4. Obligation of Independent Due Diligence</h3>
+            <p class="text-foreground leading-relaxed">We operate on the premise that our clients and partners are highly sophisticated entities capable of evaluating complex financial and operational risks. Consequently, all partners, co-investors, and advisory clients bear the exclusive responsibility for conducting their own rigorous, independent due diligence. Any reliance upon the market data, competitive analyses, or strategic recommendations provided by SPVH Group prior to the execution of definitive legal agreements is done entirely at your own risk.</p>
+
+            <h3 class="text-dark text-lg font-bold mb-3 mt-6">5.5. Acknowledgment of Potential Conflicts of Interest</h3>
+            <p class="text-foreground leading-relaxed">Given the breadth of our operations across six diverse business verticals, SPVH Group, its affiliates, managing partners, or existing clients may concurrently hold positions, manage assets, or execute capital strategies that align with, diverge from, or directly compete with the advisory perspectives provided to prospective partners. By engaging with our insights or entering into preliminary discussions, you acknowledge and accept that SPVH Group retains the absolute right to pursue its own proprietary investment and operational mandates without constraint or obligation to disclose such concurrent activities, except where explicitly bound by an executed Non-Disclosure Agreement (NDA) or formal fiduciary contract.</p>
           </section>
+
         </div>
       </div>
     </div>
