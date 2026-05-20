@@ -169,6 +169,15 @@ p, li {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
+  /* Founder badge - keep proportional like desktop */
+  h2.founder-name {
+    font-size: 1.5rem !important;
+    line-height: 1.1 !important;
+  }
+  p.founder-role {
+    font-size: 0.7rem !important;
+    line-height: 1.2 !important;
+  }
   /*
     Normalize CTA buttons on mobile across the entire site.
     - [class~="bg-primary"] matches the exact class "bg-primary" but NOT "bg-primary/20",
