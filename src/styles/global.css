@@ -169,5 +169,17 @@ p, li {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
   }
+  /* Normalize CTA button sizing on mobile - prevent oversized buttons & text wrapping */
+  a[class*="bg-primary"],
+  a[class*="bg-secondary"],
+  a[class*="bg-[#00A896]"],
+  a[class*="bg-[#496bad]"],
+  button[class*="bg-primary"],
+  button[class*="bg-secondary"],
+  button[class*="bg-[#00A896]"],
+  button[class*="bg-[#496bad]"] {
+    font-size: 0.875rem !important;
+    line-height: 1.25 !important;
+  }
 }
 
