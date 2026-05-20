@@ -431,4 +431,53 @@ const team = [
       background: rgba(10, 25, 49, 0.3);
     }
   </style>
+
+  <script>
+    // Horizontal swipe navigation for leadership cards on touch devices
+    function initLeadershipSwipe() {
+      const cards = document.querySelectorAll('.leadership-modal-card');
+      const SWIPE_THRESHOLD = 50;
+      const VERTICAL_TOLERANCE = 60;
+
+      cards.forEach((card) => {
+        if (card.dataset.swipeBound === 'true') return;
+        card.dataset.swipeBound = 'true';
+
+        let startX = 0;
+        let startY = 0;
+
+        card.addEventListener('touchstart', (e) => {
+          const t = e.changedTouches[0];
+          startX = t.screenX;
+          startY = t.screenY;
+        }, { passive: true });
+
+        card.addEventListener('touchend', (e) => {
+          const t = e.changedTouches[0];
+          const dx = t.screenX - startX;
+          const dy = t.screenY - startY;
+
+          // Only treat as horizontal swipe if X movement dominates
+          if (Math.abs(dx) < SWIPE_THRESHOLD) return;
+          if (Math.abs(dy) > VERTICAL_TOLERANCE) return;
+
+          const dialog = card.closest('dialog');
+          if (!dialog) return;
+
+          if (dx < 0) {
+            // Swipe left → next card
+            const nextBtn = dialog.querySelector('button[aria-label^="Next:"]');
+            nextBtn && nextBtn.click();
+          } else {
+            // Swipe right → previous card
+            const prevBtn = dialog.querySelector('button[aria-label^="Previous:"]');
+            prevBtn && prevBtn.click();
+          }
+        }, { passive: true });
+      });
+    }
+
+    initLeadershipSwipe();
+    document.addEventListener('astro:page-load', initLeadershipSwipe);
+  </script>
 </section>
