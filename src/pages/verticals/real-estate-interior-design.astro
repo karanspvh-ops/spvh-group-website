@@ -116,68 +116,237 @@ const jsonLd = {
     </div>
   </section>
 
-  <!-- Section: Real Estate Services -->
+  <!-- Section: Real Estate Services (Interactive Tabbed Layout) -->
   <section class="py-24 bg-surface" data-ps="src/pages/verticals/real-estate-interior-design.astro:services-section">
     <div class="container px-6 mx-auto max-w-[1400px]" data-ps="src/pages/verticals/real-estate-interior-design.astro:services-container">
-      <div class="text-center mb-16" data-ps="src/pages/verticals/real-estate-interior-design.astro:services-header">
-        <p class="text-[#00A896] font-bold text-sm uppercase tracking-[0.2em] mb-4" data-ps="src/pages/verticals/real-estate-interior-design.astro:services-overline">REAL ESTATE SERVICES</p>
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dark" data-ps="src/pages/verticals/real-estate-interior-design.astro:services-tagline">Institutional Advisory Across Every Real Estate Category</h2>
+      <!-- Header -->
+      <div class="text-center mb-12" data-ps="src/pages/verticals/real-estate-interior-design.astro:services-header">
+        <p class="text-[#00A896] font-bold text-sm uppercase tracking-[0.2em] mb-4">REAL ESTATE SERVICES</p>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-dark mb-6">Institutional Advisory Across Every Real Estate Category</h2>
+        <p class="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">From land monetisation to luxury residential delivery, we provide end-to-end advisory across the entire real estate lifecycle. Select a category to explore our services.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-ps="src/pages/verticals/real-estate-interior-design.astro:services-grid">
-        <!-- Category 1: Commercial -->
-        <div class="p-10 rounded-2xl border-2 border-primary/20 bg-white shadow-sm flex flex-col text-left transition-all duration-300" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-card-1">
-          <h3 class="text-[#00A896] text-2xl font-bold mb-6" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-title-1">Commercial Real Estate Services</h3>
-          <p class="text-dark text-base leading-[1.6] mb-8" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-desc-1">We advise developers, investors, and corporates on commercial real estate across office, retail, and mixed-use categories. Our engagement spans the full project lifecycle — from early-stage viability through to development monitoring and asset exit.</p>
-          
-          <div class="mt-auto" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-list-wrapper-1">
-            <p class="text-[#00A896] font-bold text-sm uppercase tracking-wider mb-4" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-list-header-1">Core Services Include:</p>
-            <ul class="space-y-4 text-dark text-sm md:text-base leading-[1.6]" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-list-1">
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-1-1"><strong class="font-bold">Viability & Costing Assessment:</strong> Detailed financial modelling, cost benchmarking, and return analysis to establish project feasibility before commitment.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-1-2"><strong class="font-bold">Development Financing:</strong> Structuring and sourcing of project finance, construction loans, and equity capital for commercial developments.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-1-3"><strong class="font-bold">JV Partner Identification:</strong> Matching landowners and developers with the right equity and operational partners, with structured JV frameworks that protect all stakeholders.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-1-4"><strong class="font-bold">Development Monitoring:</strong> On-ground oversight and milestone-linked progress monitoring to ensure delivery quality, timeline adherence, and cost discipline.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-1-5"><strong class="font-bold">Asset Leasing & Disposition:</strong> Strategic positioning, leasing advisory, and asset sale execution for commercial properties at optimal pricing and terms.</li>
-            </ul>
+      <!-- Category Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-10" id="re-tabs">
+        <button data-re-tab="commercial" class="re-tab active flex items-center gap-2 px-5 md:px-7 py-3 rounded-full font-bold uppercase tracking-wider text-xs md:text-sm transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+          Commercial
+        </button>
+        <button data-re-tab="land" class="re-tab flex items-center gap-2 px-5 md:px-7 py-3 rounded-full font-bold uppercase tracking-wider text-xs md:text-sm transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19h18"/><path d="M5 19v-7l7-5 7 5v7"/><path d="M9 19v-5h6v5"/></svg>
+          Land
+        </button>
+        <button data-re-tab="residential" class="re-tab flex items-center gap-2 px-5 md:px-7 py-3 rounded-full font-bold uppercase tracking-wider text-xs md:text-sm transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Residential
+        </button>
+      </div>
+
+      <!-- ─── Panel: COMMERCIAL ─── -->
+      <div class="re-panel" data-re-panel="commercial">
+        <div class="max-w-3xl mx-auto text-center mb-10">
+          <p class="text-dark text-base md:text-lg leading-relaxed">We advise developers, investors, and corporates on commercial real estate across office, retail, and mixed-use categories — from early-stage viability through to development monitoring and asset exit.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Viability & Costing -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Viability &amp; Costing Assessment</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Financial modelling, cost benchmarking, and return analysis to establish project feasibility before commitment.</p>
+          </div>
+          <!-- Development Financing -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Development Financing</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Structuring and sourcing of project finance, construction loans, and equity capital for commercial developments.</p>
+          </div>
+          <!-- JV Partner -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">JV Partner Identification</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Matching landowners and developers with the right equity and operational partners through structured JV frameworks.</p>
+          </div>
+          <!-- Development Monitoring -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Development Monitoring</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">On-ground oversight and milestone-linked progress monitoring for delivery quality, timeline adherence, and cost discipline.</p>
+          </div>
+          <!-- Leasing & Disposition -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Asset Leasing &amp; Disposition</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Strategic positioning, leasing advisory, and asset sale execution at optimal pricing and terms.</p>
           </div>
         </div>
+      </div>
 
-        <!-- Category 2: Land -->
-        <div class="p-10 rounded-2xl border-2 border-primary/20 bg-white shadow-sm flex flex-col text-left transition-all duration-300" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-card-2">
-          <h3 class="text-[#00A896] text-2xl font-bold mb-6" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-title-2">Land Services</h3>
-          <p class="text-dark text-base leading-[1.6] mb-8" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-desc-2">Land is the foundation of all real estate value. We work with landowners, family estates, corporates, and institutional holders to unlock maximum value from land assets — through sale, development partnership, or structured monetisation.</p>
-          
-          <div class="mt-auto" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-list-wrapper-2">
-            <p class="text-[#00A896] font-bold text-sm uppercase tracking-wider mb-4" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-list-header-2">Core Services Include:</p>
-            <ul class="space-y-4 text-dark text-sm md:text-base leading-[1.6]" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-list-2">
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-2-1"><strong class="font-bold">Land Viability Assessment:</strong> Zoning, FSI analysis, market comps, and highest-and-best-use evaluation.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-2-2"><strong class="font-bold">Land Monetisation Strategy:</strong> Identifying the optimal monetisation route — outright sale, JV development, or revenue share and executing with precision.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-2-3"><strong class="font-bold">JV Partner Structuring:</strong> Negotiating and structuring equitable joint development agreements that align landowner and developer interests.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-2-4"><strong class="font-bold">Development Financing for Land Projects:</strong> Advisory on construction and bridge finance solutions tailored to land-led development structures.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-2-5"><strong class="font-bold">Title & Due Diligence Coordination:</strong> Working alongside legal partners to ensure clean title, regulatory compliance, and transaction readiness.</li>
-            </ul>
+      <!-- ─── Panel: LAND ─── -->
+      <div class="re-panel hidden" data-re-panel="land">
+        <div class="max-w-3xl mx-auto text-center mb-10">
+          <p class="text-dark text-base md:text-lg leading-relaxed">Land is the foundation of all real estate value. We work with landowners, family estates, and institutional holders to unlock maximum value — through sale, development partnership, or structured monetisation.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Land Viability -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" x2="9" y1="3" y2="18"/><line x1="15" x2="15" y1="6" y2="21"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Land Viability Assessment</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Zoning, FSI analysis, market comps, and highest-and-best-use evaluation.</p>
+          </div>
+          <!-- Monetisation Strategy -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Land Monetisation Strategy</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Identifying the optimal monetisation route — outright sale, JV development, or revenue share — and executing with precision.</p>
+          </div>
+          <!-- JV Structuring -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">JV Partner Structuring</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Negotiating and structuring equitable joint development agreements aligning landowner and developer interests.</p>
+          </div>
+          <!-- Land Financing -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Land Project Financing</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Construction and bridge finance solutions tailored to land-led development structures.</p>
+          </div>
+          <!-- Title & Due Diligence -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Title &amp; Due Diligence</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Working alongside legal partners for clean title, regulatory compliance, and transaction readiness.</p>
           </div>
         </div>
+      </div>
 
-        <!-- Category 3: Residential -->
-        <div class="p-10 rounded-2xl border-2 border-primary/20 bg-white shadow-sm flex flex-col text-left transition-all duration-300" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-card-3">
-          <h3 class="text-[#00A896] text-2xl font-bold mb-6" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-title-3">Residential Services</h3>
-          <p class="text-dark text-base leading-[1.6] mb-8" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-desc-3">We serve UHNI clients, developers, and family offices seeking premium residential real estate advisory from acquisition strategy through to full delivery.</p>
-          
-          <div class="mt-auto" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-list-wrapper-3">
-            <p class="text-[#00A896] font-bold text-sm uppercase tracking-wider mb-4" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-list-header-3">Core Services Include:</p>
-            <ul class="space-y-4 text-dark text-sm md:text-base leading-[1.6]" data-ps="src/pages/verticals/real-estate-interior-design.astro:service-list-3">
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-3-1"><strong class="font-bold">Viability & Market Assessment:</strong> Demand analysis, competitive positioning, and pricing strategy for residential projects.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-3-2"><strong class="font-bold">Costing & Budget Structuring:</strong> Detailed cost planning, value engineering, and budget management across project phases.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-3-3"><strong class="font-bold">Development Financing:</strong> Sourcing and structuring residential project finance from institutional and alternative lenders.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-3-4"><strong class="font-bold">JV Partner Identification:</strong> Connecting residential developers with capital partners and operator networks.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-3-5"><strong class="font-bold">Development Monitoring:</strong> Quality oversight, timeline management, and cost control throughout the construction lifecycle.</li>
-              <li data-ps="src/pages/verticals/real-estate-interior-design.astro:service-li-3-6"><strong class="font-bold">UHNI Acquisition Advisory:</strong> Bespoke advisory for ultra-high-net-worth buyers seeking premium residential assets evaluated for both lifestyle fit and investment merit.</li>
-            </ul>
+      <!-- ─── Panel: RESIDENTIAL ─── -->
+      <div class="re-panel hidden" data-re-panel="residential">
+        <div class="max-w-3xl mx-auto text-center mb-10">
+          <p class="text-dark text-base md:text-lg leading-relaxed">We serve UHNI clients, developers, and family offices seeking premium residential real estate advisory — from acquisition strategy through to full delivery.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Market Assessment -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Viability &amp; Market Assessment</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Demand analysis, competitive positioning, and pricing strategy for residential projects.</p>
+          </div>
+          <!-- Costing & Budget -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="16" x2="16" y1="14" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Costing &amp; Budget Structuring</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Detailed cost planning, value engineering, and budget management across project phases.</p>
+          </div>
+          <!-- Residential Financing -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Development Financing</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Sourcing and structuring residential project finance from institutional and alternative lenders.</p>
+          </div>
+          <!-- JV Partner Residential -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">JV Partner Identification</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Connecting residential developers with capital partners and operator networks.</p>
+          </div>
+          <!-- Residential Monitoring -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">Development Monitoring</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Quality oversight, timeline management, and cost control throughout the construction lifecycle.</p>
+          </div>
+          <!-- UHNI Acquisition -->
+          <div class="re-service-card group p-6 rounded-2xl bg-white border border-border hover:border-[#00A896] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-[#00A896]/10 text-[#00A896] flex items-center justify-center mb-4 group-hover:bg-[#00A896] group-hover:text-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 4 7-4 11-4-11Z"/><path d="M3 7h18"/><path d="M5 7h14"/></svg>
+            </div>
+            <h4 class="text-dark text-base font-bold mb-2">UHNI Acquisition Advisory</h4>
+            <p class="text-muted-foreground text-sm leading-relaxed">Bespoke advisory for ultra-high-net-worth buyers seeking premium residential assets — for lifestyle fit and investment merit.</p>
           </div>
         </div>
       </div>
     </div>
+
+    <style>
+      .re-tab {
+        background: #ffffff;
+        color: #1b202d;
+        border: 2px solid #e1e7ef;
+      }
+      .re-tab:hover {
+        border-color: #00A896;
+        color: #00A896;
+      }
+      .re-tab.active {
+        background: #00A896;
+        color: #ffffff;
+        border-color: #00A896;
+        box-shadow: 0 8px 24px -8px rgba(0, 168, 150, 0.5);
+      }
+      .re-panel {
+        animation: re-fade-in 0.4s ease-out;
+      }
+      @keyframes re-fade-in {
+        from { opacity: 0; transform: translateY(8px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+
+    <script>
+      (function () {
+        function initReTabs() {
+          const tabs = document.querySelectorAll('[data-re-tab]');
+          const panels = document.querySelectorAll('[data-re-panel]');
+          tabs.forEach((tab) => {
+            tab.addEventListener('click', () => {
+              const target = tab.getAttribute('data-re-tab');
+              tabs.forEach((t) => t.classList.remove('active'));
+              tab.classList.add('active');
+              panels.forEach((p) => {
+                if (p.getAttribute('data-re-panel') === target) {
+                  p.classList.remove('hidden');
+                } else {
+                  p.classList.add('hidden');
+                }
+              });
+            });
+          });
+        }
+        initReTabs();
+        document.addEventListener('astro:page-load', initReTabs);
+      })();
+    </script>
   </section>
 
   <!-- Interior Design Services -->
